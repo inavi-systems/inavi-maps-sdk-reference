@@ -1,0 +1,5 @@
+com.inavi.mapsdk.constants
+com.inavi.mapsdk.exceptions
+com.inavi.mapsdk.geometry
+com.inavi.mapsdk.maps
+com.inavi.mapsdk.style.shapes

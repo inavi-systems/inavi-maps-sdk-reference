@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>INVImage Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    <link rel='shortcut icon' href='http://www.inavi.com/Content/css/inavi.ico' type='image/x-icon' />
+  </head>
+  <body>
+
+    <a name="//apple_ref/objc/Class/INVImage" class="dashAnchor"></a>
+
+    <a title="INVImage Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          <img class="header-icon" src="../img/inavi.png" />
+          <span class='header-tag'>iNaviMaps SDK for iOS 0.3.2</span>
+        </a>
+        
+      </p>
+    
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">iNaviMaps Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      INVImage Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Maps.html">Maps</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/InaviMapView.html">InaviMapView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVMapOptions.html">INVMapOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/INVMapViewDelegate.html">INVMapViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/INVUserTrackingMode.html">INVUserTrackingMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVLocationIcon.html">INVLocationIcon</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Camera.html">Camera</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVCameraPosition.html">INVCameraPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVCameraUpdate.html">INVCameraUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVCameraUpdateParams.html">INVCameraUpdateParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/INVCameraUpdateAnimation.html">INVCameraUpdateAnimation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Geometry.html">Geometry</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVLatLng.html">INVLatLng</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVLatLngBounds.html">INVLatLngBounds</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVProjection.html">INVProjection</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Shapes.html">Shapes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVShape.html">INVShape</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVImage.html">INVImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Shapes.html#/c:objc(pl)INVImageDataSource">INVImageDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/INVImageTextDataSource.html">INVImageTextDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/INVImageViewDataSource.html">INVImageViewDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVMarker.html">INVMarker</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVPolygon.html">INVPolygon</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVPolyline.html">INVPolyline</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVRoute.html">INVRoute</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVRouteLink.html">INVRouteLink</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/INVRouteDelegate.html">INVRouteDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVMultiLine.html">INVMultiLine</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVLine.html">INVLine</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/INVLineCap.html">INVLineCap</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/INVLineJoin.html">INVLineJoin</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVCircle.html">INVCircle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVInfoWindow.html">INVInfoWindow</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Authentication.html">Authentication</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVMapSdk.html">INVMapSdk</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/INVMapSdkDelegate.html">INVMapSdkDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Event%20Block.html">Event Block</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Event%20Block.html#/c:INVShape.h@T@INVShapeTouchEvent">INVShapeTouchEvent</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Camera%20Constants.html">Camera Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Camera%20Constants.html#/c:INVCameraUpdate.h@INV_CAMERA_UPDATE_REASON_CONTROL">INV_CAMERA_UPDATE_REASON_CONTROL</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Camera%20Constants.html#/c:INVCameraUpdate.h@INV_CAMERA_UPDATE_REASON_GESTURE">INV_CAMERA_UPDATE_REASON_GESTURE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Camera%20Constants.html#/c:INVCameraUpdate.h@INV_CAMERA_UPDATE_REASON_LOCATION_CHANGED">INV_CAMERA_UPDATE_REASON_LOCATION_CHANGED</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Camera%20Constants.html#/c:INVCameraUpdate.h@INV_CAMERA_UPDATE_REASON_NONE">INV_CAMERA_UPDATE_REASON_NONE</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Global%20Z%20Index%20Constants.html">Global Z Index Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVLocationIcon.h@INV_LOCATION_ICON_DEFAULT_GLOBAL_Z_INDEX">INV_LOCATION_ICON_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVMarker.h@INV_MARKER_DEFAULT_GLOBAL_Z_INDEX">INV_MARKER_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVPolygon.h@INV_POLYGON_DEFAULT_GLOBAL_Z_INDEX">INV_POLYGON_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVPolyline.h@INV_POLYLINE_DEFAULT_GLOBAL_Z_INDEX">INV_POLYLINE_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVRoute.h@INV_ROUTE_DEFAULT_GLOBAL_Z_INDEX">INV_ROUTE_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVMultiLine.h@INV_MULTI_LINE_DEFAULT_GLOBAL_Z_INDEX">INV_MULTI_LINE_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVCircle.h@INV_CIRCLE_DEFAULT_GLOBAL_Z_INDEX">INV_CIRCLE_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVInfoWindow.h@INV_INFO_WINDOW_DEFAULT_GLOBAL_Z_INDEX">INV_INFO_WINDOW_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Image%20Constants.html">Image Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_LOCATION_ICON_IMAGE">INV_LOCATION_ICON_IMAGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_LOCATION_ICON_IMAGE_TRACKING">INV_LOCATION_ICON_IMAGE_TRACKING</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_LOCATION_ICON_IMAGE_TRACKING_COMPASS">INV_LOCATION_ICON_IMAGE_TRACKING_COMPASS</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_MARKER_IMAGE_BLUE">INV_MARKER_IMAGE_BLUE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_MARKER_IMAGE_GRAY">INV_MARKER_IMAGE_GRAY</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_MARKER_IMAGE_GREEN">INV_MARKER_IMAGE_GREEN</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_MARKER_IMAGE_RED">INV_MARKER_IMAGE_RED</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_MARKER_IMAGE_YELLOW">INV_MARKER_IMAGE_YELLOW</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Color%20Constants.html">Color Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Color%20Constants.html#/c:@INV_LOCATION_ICON_CIRCLE_COLOR">INV_LOCATION_ICON_CIRCLE_COLOR</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>INVImage</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">INVImage</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n">NSSecureCoding</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>셰이프에서 사용하는 비트맵 이미지를 정의한 클래스.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializing%20and%20Preparing%20the%20Image%20Object"></a>
+                <a name="//apple_ref/objc/Section/Initializing and Preparing the Image Object" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a href="#/Initializing%20and%20Preparing%20the%20Image%20Object">
+                    <h3 id="Initializing%20and%20Preparing%20the%20Image%20Object" class="section-name">Initializing and Preparing the Image Object<span class="anchor-icon" /></h3>
+                  </a>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVImage(cm)imageWithImage:"></a>
+                    <a name="//apple_ref/objc/Method/+imageWithImage:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVImage(cm)imageWithImage:">+imageWithImage:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>UIImage</code>로부터 <code>INVImage</code> 객체를 생성합니다.
+재사용 식별자는 자동으로 지정됩니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">imageWithImage</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIImage</span> <span class="o">*</span><span class="p">)</span><span class="nv">image</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">image</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>image</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>생성할 이미지 객체.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>INVImage</code> 객체.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVImage(cm)imageWithImage:reuseIdentifier:"></a>
+                    <a name="//apple_ref/objc/Method/+imageWithImage:reuseIdentifier:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVImage(cm)imageWithImage:reuseIdentifier:">+imageWithImage:reuseIdentifier:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>UIImage</code>로부터 <code>INVImage</code> 객체를 생성합니다.
+재사용 식별자는 <code><a href="../Classes/INVImage.html#/c:objc(cs)INVImage(py)reuseIdentifier">reuseIdentifier</a></code>로 지정됩니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">imageWithImage</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIImage</span> <span class="o">*</span><span class="p">)</span><span class="nv">image</span>
+                       <span class="nf">reuseIdentifier</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">reuseIdentifier</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">image</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">,</span> <span class="nv">reuseIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>image</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>생성할 이미지 객체.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>reuseIdentifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>재사용 식별자.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>INVImage</code> 객체.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVImage(cm)imageWithName:"></a>
+                    <a name="//apple_ref/objc/Method/+imageWithName:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVImage(cm)imageWithName:">+imageWithName:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>앱의 <code>Asset</code>으로부터 <code>INVImage</code> 객체를 생성합니다.
+재사용 식별자는 자동으로 지정됩니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">imageWithName</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">name</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>name</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>생성할 이미지 Asset 이름.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>INVImage</code> 객체.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVImage(cm)imageWithName:reuseIdentifier:"></a>
+                    <a name="//apple_ref/objc/Method/+imageWithName:reuseIdentifier:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVImage(cm)imageWithName:reuseIdentifier:">+imageWithName:reuseIdentifier:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>앱의 <code>Asset</code>으로부터 <code>INVImage</code> 객체를 생성합니다.
+재사용 식별자는 <code><a href="../Classes/INVImage.html#/c:objc(cs)INVImage(py)reuseIdentifier">reuseIdentifier</a></code>로 지정됩니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">imageWithName</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">name</span>
+                      <span class="nf">reuseIdentifier</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">reuseIdentifier</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">reuseIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>name</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>생성할 이미지 Asset 이름.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>reuseIdentifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>재사용 식별자.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>INVImage</code> 객체.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVImage(cm)imageWithName:inBundle:"></a>
+                    <a name="//apple_ref/objc/Method/+imageWithName:inBundle:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVImage(cm)imageWithName:inBundle:">+imageWithName:inBundle:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지정한 <code>Bundle</code>의 <code>Asset</code>으로부터 <code>INVImage</code> 객체를 생성합니다.
+재사용 식별자는 자동으로 지정됩니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">imageWithName</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">name</span>
+                             <span class="nf">inBundle</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSBundle</span> <span class="o">*</span><span class="p">)</span><span class="nv">bundle</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="k">in</span> <span class="nv">bundle</span><span class="p">:</span> <span class="kt">Bundle</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>name</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>생성할 이미지 Asset 이름.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bundle</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Asset이 포함된 번들.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>INVImage</code> 객체.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVImage(cm)imageWithName:inBundle:reuseIdentifier:"></a>
+                    <a name="//apple_ref/objc/Method/+imageWithName:inBundle:reuseIdentifier:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVImage(cm)imageWithName:inBundle:reuseIdentifier:">+imageWithName:inBundle:reuseIdentifier:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지정한 <code>Bundle</code>의 <code>Asset</code>으로부터 <code>INVImage</code> 객체를 생성합니다.
+재사용 식별자는 <code><a href="../Classes/INVImage.html#/c:objc(cs)INVImage(py)reuseIdentifier">reuseIdentifier</a></code>로 지정됩니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">imageWithName</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">name</span>
+                             <span class="nf">inBundle</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSBundle</span> <span class="o">*</span><span class="p">)</span><span class="nv">bundle</span>
+                      <span class="nf">reuseIdentifier</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">reuseIdentifier</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="k">in</span> <span class="nv">bundle</span><span class="p">:</span> <span class="kt">Bundle</span><span class="p">?,</span> <span class="nv">reuseIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>name</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>생성할 이미지 Asset 이름.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bundle</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Asset이 포함된 번들.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>reuseIdentifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>재사용 식별자.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>INVImage</code> 객체.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Getting%20and%20Setting%20Attributes"></a>
+                <a name="//apple_ref/objc/Section/Getting and Setting Attributes" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a href="#/Getting%20and%20Setting%20Attributes">
+                    <h3 id="Getting%20and%20Setting%20Attributes" class="section-name">Getting and Setting Attributes<span class="anchor-icon" /></h3>
+                  </a>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVImage(py)image"></a>
+                    <a name="//apple_ref/objc/Property/image" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVImage(py)image">image</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>이미지 객체.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">UIImage</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">image</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">image</span><span class="p">:</span> <span class="kt">UIImage</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVImage(py)reuseIdentifier"></a>
+                    <a name="//apple_ref/objc/Property/reuseIdentifier" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVImage(py)reuseIdentifier">reuseIdentifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>재사용 식별자.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">reuseIdentifier</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">reuseIdentifier</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>ⓒ 2019. <a class="link" href="http://www.inavisys.com/" target="_blank" rel="external">iNavi Systems Corp.</a> All rights reserved.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shapes  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    <link rel='shortcut icon' href='http://www.inavi.com/Content/css/inavi.ico' type='image/x-icon' />
+  </head>
+  <body>
+
+    <a name="//apple_ref/objc/Section/Shapes" class="dashAnchor"></a>
+
+    <a title="Shapes  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          <img class="header-icon" src="img/inavi.png" />
+          <span class='header-tag'>iNaviMaps SDK for iOS 0.3.2</span>
+        </a>
+        
+      </p>
+    
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">iNaviMaps Reference</a>
+      <img class="carat" src="img/carat.png" />
+      Shapes  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Maps.html">Maps</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/InaviMapView.html">InaviMapView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/INVMapOptions.html">INVMapOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/INVMapViewDelegate.html">INVMapViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/INVUserTrackingMode.html">INVUserTrackingMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/INVLocationIcon.html">INVLocationIcon</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Camera.html">Camera</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/INVCameraPosition.html">INVCameraPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/INVCameraUpdate.html">INVCameraUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/INVCameraUpdateParams.html">INVCameraUpdateParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/INVCameraUpdateAnimation.html">INVCameraUpdateAnimation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Geometry.html">Geometry</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/INVLatLng.html">INVLatLng</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/INVLatLngBounds.html">INVLatLngBounds</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/INVProjection.html">INVProjection</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Shapes.html">Shapes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/INVShape.html">INVShape</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/INVImage.html">INVImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Shapes.html#/c:objc(pl)INVImageDataSource">INVImageDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/INVImageTextDataSource.html">INVImageTextDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/INVImageViewDataSource.html">INVImageViewDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/INVMarker.html">INVMarker</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/INVPolygon.html">INVPolygon</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/INVPolyline.html">INVPolyline</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/INVRoute.html">INVRoute</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/INVRouteLink.html">INVRouteLink</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/INVRouteDelegate.html">INVRouteDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/INVMultiLine.html">INVMultiLine</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/INVLine.html">INVLine</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/INVLineCap.html">INVLineCap</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/INVLineJoin.html">INVLineJoin</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/INVCircle.html">INVCircle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/INVInfoWindow.html">INVInfoWindow</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Authentication.html">Authentication</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/INVMapSdk.html">INVMapSdk</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/INVMapSdkDelegate.html">INVMapSdkDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Event%20Block.html">Event Block</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Event%20Block.html#/c:INVShape.h@T@INVShapeTouchEvent">INVShapeTouchEvent</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Camera%20Constants.html">Camera Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Camera%20Constants.html#/c:INVCameraUpdate.h@INV_CAMERA_UPDATE_REASON_CONTROL">INV_CAMERA_UPDATE_REASON_CONTROL</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Camera%20Constants.html#/c:INVCameraUpdate.h@INV_CAMERA_UPDATE_REASON_GESTURE">INV_CAMERA_UPDATE_REASON_GESTURE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Camera%20Constants.html#/c:INVCameraUpdate.h@INV_CAMERA_UPDATE_REASON_LOCATION_CHANGED">INV_CAMERA_UPDATE_REASON_LOCATION_CHANGED</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Camera%20Constants.html#/c:INVCameraUpdate.h@INV_CAMERA_UPDATE_REASON_NONE">INV_CAMERA_UPDATE_REASON_NONE</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Global%20Z%20Index%20Constants.html">Global Z Index Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Global%20Z%20Index%20Constants.html#/c:INVLocationIcon.h@INV_LOCATION_ICON_DEFAULT_GLOBAL_Z_INDEX">INV_LOCATION_ICON_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Global%20Z%20Index%20Constants.html#/c:INVMarker.h@INV_MARKER_DEFAULT_GLOBAL_Z_INDEX">INV_MARKER_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Global%20Z%20Index%20Constants.html#/c:INVPolygon.h@INV_POLYGON_DEFAULT_GLOBAL_Z_INDEX">INV_POLYGON_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Global%20Z%20Index%20Constants.html#/c:INVPolyline.h@INV_POLYLINE_DEFAULT_GLOBAL_Z_INDEX">INV_POLYLINE_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Global%20Z%20Index%20Constants.html#/c:INVRoute.h@INV_ROUTE_DEFAULT_GLOBAL_Z_INDEX">INV_ROUTE_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Global%20Z%20Index%20Constants.html#/c:INVMultiLine.h@INV_MULTI_LINE_DEFAULT_GLOBAL_Z_INDEX">INV_MULTI_LINE_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Global%20Z%20Index%20Constants.html#/c:INVCircle.h@INV_CIRCLE_DEFAULT_GLOBAL_Z_INDEX">INV_CIRCLE_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Global%20Z%20Index%20Constants.html#/c:INVInfoWindow.h@INV_INFO_WINDOW_DEFAULT_GLOBAL_Z_INDEX">INV_INFO_WINDOW_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Image%20Constants.html">Image Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Image%20Constants.html#/c:@INV_LOCATION_ICON_IMAGE">INV_LOCATION_ICON_IMAGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Image%20Constants.html#/c:@INV_LOCATION_ICON_IMAGE_TRACKING">INV_LOCATION_ICON_IMAGE_TRACKING</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Image%20Constants.html#/c:@INV_LOCATION_ICON_IMAGE_TRACKING_COMPASS">INV_LOCATION_ICON_IMAGE_TRACKING_COMPASS</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Image%20Constants.html#/c:@INV_MARKER_IMAGE_BLUE">INV_MARKER_IMAGE_BLUE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Image%20Constants.html#/c:@INV_MARKER_IMAGE_GRAY">INV_MARKER_IMAGE_GRAY</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Image%20Constants.html#/c:@INV_MARKER_IMAGE_GREEN">INV_MARKER_IMAGE_GREEN</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Image%20Constants.html#/c:@INV_MARKER_IMAGE_RED">INV_MARKER_IMAGE_RED</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Image%20Constants.html#/c:@INV_MARKER_IMAGE_YELLOW">INV_MARKER_IMAGE_YELLOW</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Color%20Constants.html">Color Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Color%20Constants.html#/c:@INV_LOCATION_ICON_CIRCLE_COLOR">INV_LOCATION_ICON_CIRCLE_COLOR</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>Shapes</h1>
+            
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVShape"></a>
+                    <a name="//apple_ref/objc/Class/INVShape" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVShape">INVShape</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>아이나비 지도 위에 표출되는 셰이프의 속성을 관리하는 클래스.<br>
+지도에 추가하거나 제거할 수 있습니다.</p>
+
+                        <a href="Classes/INVShape.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">INVShape</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">INVShape</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVImage"></a>
+                    <a name="//apple_ref/objc/Class/INVImage" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVImage">INVImage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>셰이프에서 사용하는 비트맵 이미지를 정의한 클래스.</p>
+
+                        <a href="Classes/INVImage.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">INVImage</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n">NSSecureCoding</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">INVImage</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)INVImageDataSource"></a>
+                    <a name="//apple_ref/objc/Protocol/INVImageDataSource" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)INVImageDataSource">INVImageDataSource</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>셰이프에서 사용하는 이미지 리소스를 생성하는 기본 프로토콜.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">INVImageDataSource</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">INVImageDataSource</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)INVImageTextDataSource"></a>
+                    <a name="//apple_ref/objc/Protocol/INVImageTextDataSource" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)INVImageTextDataSource">INVImageTextDataSource</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>셰이프에서 사용하는 이미지 리소스를 <code>NSString</code>으로 구성하면 title을 포함해 기본 배경이 있는 이미지로 구성하는 프로토콜</p>
+
+                        <a href="Protocols/INVImageTextDataSource.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">INVImageTextDataSource</span> <span class="o">&lt;</span><span class="n"><a href="Shapes.html#/c:objc(pl)INVImageDataSource">INVImageDataSource</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">INVImageTextDataSource</span> <span class="p">:</span> <span class="kt"><a href="Shapes.html#/c:objc(pl)INVImageDataSource">INVImageDataSource</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)INVImageViewDataSource"></a>
+                    <a name="//apple_ref/objc/Protocol/INVImageViewDataSource" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)INVImageViewDataSource">INVImageViewDataSource</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>셰이프에서 사용하는 이미지 리소스를 <code>UIView</code>로 구성하는 프로토콜.</p>
+
+                        <a href="Protocols/INVImageViewDataSource.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">INVImageViewDataSource</span> <span class="o">&lt;</span><span class="n"><a href="Shapes.html#/c:objc(pl)INVImageDataSource">INVImageDataSource</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">INVImageViewDataSource</span> <span class="p">:</span> <span class="kt"><a href="Shapes.html#/c:objc(pl)INVImageDataSource">INVImageDataSource</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVMarker"></a>
+                    <a name="//apple_ref/objc/Class/INVMarker" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVMarker">INVMarker</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도 위에 아이콘과 타이틀을 이용해 한 지점을 표출하는 셰이프 클래스.</p>
+
+                        <a href="Classes/INVMarker.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">INVMarker</span> <span class="p">:</span> <span class="nc"><a href="Classes/INVShape.html">INVShape</a></span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">INVMarker</span> <span class="p">:</span> <span class="kt"><a href="Classes/INVShape.html">INVShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVPolygon"></a>
+                    <a name="//apple_ref/objc/Class/INVPolygon" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVPolygon">INVPolygon</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도 위에 다각형을 표출하는 셰이프 클래스.</p>
+
+                        <a href="Classes/INVPolygon.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">INVPolygon</span> <span class="p">:</span> <span class="nc"><a href="Classes/INVShape.html">INVShape</a></span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">INVPolygon</span> <span class="p">:</span> <span class="kt"><a href="Classes/INVShape.html">INVShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVPolyline"></a>
+                    <a name="//apple_ref/objc/Class/INVPolyline" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVPolyline">INVPolyline</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도 위에 선형을 표출하는 셰이프 클래스.</p>
+
+                        <a href="Classes/INVPolyline.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">INVPolyline</span> <span class="p">:</span> <span class="nc"><a href="Classes/INVShape.html">INVShape</a></span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">INVPolyline</span> <span class="p">:</span> <span class="kt"><a href="Classes/INVShape.html">INVShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVRoute"></a>
+                    <a name="//apple_ref/objc/Class/INVRoute" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVRoute">INVRoute</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도 위에 다중 선형으로 경로를 표출하는 셰이프 클래스.</p>
+
+                        <a href="Classes/INVRoute.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">INVRoute</span> <span class="p">:</span> <span class="nc"><a href="Classes/INVShape.html">INVShape</a></span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">INVRoute</span> <span class="p">:</span> <span class="kt"><a href="Classes/INVShape.html">INVShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVRouteLink"></a>
+                    <a name="//apple_ref/objc/Class/INVRouteLink" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVRouteLink">INVRouteLink</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>경로를 구성하는 좌표열과 색상 속성을 정의한 클래스.</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    <code><a href="Classes/INVRoute.html">INVRoute</a></code>
+
+</div>
+
+                        <a href="Classes/INVRouteLink.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">INVRouteLink</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">INVRouteLink</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)INVRouteDelegate"></a>
+                    <a name="//apple_ref/objc/Protocol/INVRouteDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)INVRouteDelegate">INVRouteDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>경로의 진행률 변화의 결과를 알려주는 함수가 정의된 프로토콜.</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    <code><a href="Classes/INVRoute.html">INVRoute</a></code>
+
+</div>
+
+                        <a href="Protocols/INVRouteDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">INVRouteDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">INVRouteDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVMultiLine"></a>
+                    <a name="//apple_ref/objc/Class/INVMultiLine" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(cs)INVMultiLine">INVMultiLine</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p><code><a href="Classes/INVRoute.html">INVRoute</a></code>로 대체됩니다.</p>
+
+                      </div>
+                      <div class="abstract">
+                        <p>지도 위에 다중 선형을 표출하는 셰이프 클래스.</p>
+
+                        <a href="Classes/INVMultiLine.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">INVMultiLine</span> <span class="p">:</span> <span class="nc"><a href="Classes/INVShape.html">INVShape</a></span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">INVMultiLine</span> <span class="p">:</span> <span class="kt"><a href="Classes/INVShape.html">INVShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVLine"></a>
+                    <a name="//apple_ref/objc/Class/INVLine" class="dashAnchor"></a>
+                    <a class="token discouraged" href="#/c:objc(cs)INVLine">INVLine</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p><code><a href="Classes/INVRouteLink.html">INVRouteLink</a></code>로 대체됩니다.</p>
+
+                      </div>
+                      <div class="abstract">
+                        <p>다중 선형에서 사용하는 선형의 좌표열과 색상 속성을 정의한 클래스.</p>
+
+                        <a href="Classes/INVLine.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">INVLine</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">INVLine</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@INVLineCap"></a>
+                    <a name="//apple_ref/objc/Enum/INVLineCap" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@INVLineCap">INVLineCap</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>끝 지점의 모양을 정의한 열거형.</p>
+
+                        <a href="Enums/INVLineCap.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">INVLineCap</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">INVLineCap</span> <span class="p">:</span> <span class="kt">UInt</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@INVLineJoin"></a>
+                    <a name="//apple_ref/objc/Enum/INVLineJoin" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@INVLineJoin">INVLineJoin</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>연결점의 모양을 정의한 열거형.</p>
+
+                        <a href="Enums/INVLineJoin.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">INVLineJoin</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">INVLineJoin</span> <span class="p">:</span> <span class="kt">UInt</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVCircle"></a>
+                    <a name="//apple_ref/objc/Class/INVCircle" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVCircle">INVCircle</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도 위에 원을 표출하는 셰이프 클래스.</p>
+
+                        <a href="Classes/INVCircle.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">INVCircle</span> <span class="p">:</span> <span class="nc"><a href="Classes/INVShape.html">INVShape</a></span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">INVCircle</span> <span class="p">:</span> <span class="kt"><a href="Classes/INVShape.html">INVShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVInfoWindow"></a>
+                    <a name="//apple_ref/objc/Class/INVInfoWindow" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVInfoWindow">INVInfoWindow</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도의 특정 위치 또는 마커 위에 창을 띄워 원하는 정보를 표시할 수 있는 셰이프 클래스.</p>
+
+                        <a href="Classes/INVInfoWindow.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">INVInfoWindow</span> <span class="p">:</span> <span class="nc"><a href="Classes/INVShape.html">INVShape</a></span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">INVInfoWindow</span> <span class="p">:</span> <span class="kt"><a href="Classes/INVShape.html">INVShape</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>ⓒ 2019. <a class="link" href="http://www.inavisys.com/" target="_blank" rel="external">iNavi Systems Corp.</a> All rights reserved.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

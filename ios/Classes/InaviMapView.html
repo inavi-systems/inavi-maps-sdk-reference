@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>InaviMapView Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    <link rel='shortcut icon' href='http://www.inavi.com/Content/css/inavi.ico' type='image/x-icon' />
+  </head>
+  <body>
+
+    <a name="//apple_ref/objc/Class/InaviMapView" class="dashAnchor"></a>
+
+    <a title="InaviMapView Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          <img class="header-icon" src="../img/inavi.png" />
+          <span class='header-tag'>iNaviMaps SDK for iOS 0.3.2</span>
+        </a>
+        
+      </p>
+    
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">iNaviMaps Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      InaviMapView Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Maps.html">Maps</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/InaviMapView.html">InaviMapView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVMapOptions.html">INVMapOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/INVMapViewDelegate.html">INVMapViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/INVUserTrackingMode.html">INVUserTrackingMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVLocationIcon.html">INVLocationIcon</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Camera.html">Camera</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVCameraPosition.html">INVCameraPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVCameraUpdate.html">INVCameraUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVCameraUpdateParams.html">INVCameraUpdateParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/INVCameraUpdateAnimation.html">INVCameraUpdateAnimation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Geometry.html">Geometry</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVLatLng.html">INVLatLng</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVLatLngBounds.html">INVLatLngBounds</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVProjection.html">INVProjection</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Shapes.html">Shapes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVShape.html">INVShape</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVImage.html">INVImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Shapes.html#/c:objc(pl)INVImageDataSource">INVImageDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/INVImageTextDataSource.html">INVImageTextDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/INVImageViewDataSource.html">INVImageViewDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVMarker.html">INVMarker</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVPolygon.html">INVPolygon</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVPolyline.html">INVPolyline</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVRoute.html">INVRoute</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVRouteLink.html">INVRouteLink</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/INVRouteDelegate.html">INVRouteDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVMultiLine.html">INVMultiLine</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVLine.html">INVLine</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/INVLineCap.html">INVLineCap</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/INVLineJoin.html">INVLineJoin</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVCircle.html">INVCircle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVInfoWindow.html">INVInfoWindow</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Authentication.html">Authentication</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVMapSdk.html">INVMapSdk</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/INVMapSdkDelegate.html">INVMapSdkDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Event%20Block.html">Event Block</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Event%20Block.html#/c:INVShape.h@T@INVShapeTouchEvent">INVShapeTouchEvent</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Camera%20Constants.html">Camera Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Camera%20Constants.html#/c:INVCameraUpdate.h@INV_CAMERA_UPDATE_REASON_CONTROL">INV_CAMERA_UPDATE_REASON_CONTROL</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Camera%20Constants.html#/c:INVCameraUpdate.h@INV_CAMERA_UPDATE_REASON_GESTURE">INV_CAMERA_UPDATE_REASON_GESTURE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Camera%20Constants.html#/c:INVCameraUpdate.h@INV_CAMERA_UPDATE_REASON_LOCATION_CHANGED">INV_CAMERA_UPDATE_REASON_LOCATION_CHANGED</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Camera%20Constants.html#/c:INVCameraUpdate.h@INV_CAMERA_UPDATE_REASON_NONE">INV_CAMERA_UPDATE_REASON_NONE</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Global%20Z%20Index%20Constants.html">Global Z Index Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVLocationIcon.h@INV_LOCATION_ICON_DEFAULT_GLOBAL_Z_INDEX">INV_LOCATION_ICON_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVMarker.h@INV_MARKER_DEFAULT_GLOBAL_Z_INDEX">INV_MARKER_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVPolygon.h@INV_POLYGON_DEFAULT_GLOBAL_Z_INDEX">INV_POLYGON_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVPolyline.h@INV_POLYLINE_DEFAULT_GLOBAL_Z_INDEX">INV_POLYLINE_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVRoute.h@INV_ROUTE_DEFAULT_GLOBAL_Z_INDEX">INV_ROUTE_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVMultiLine.h@INV_MULTI_LINE_DEFAULT_GLOBAL_Z_INDEX">INV_MULTI_LINE_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVCircle.h@INV_CIRCLE_DEFAULT_GLOBAL_Z_INDEX">INV_CIRCLE_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVInfoWindow.h@INV_INFO_WINDOW_DEFAULT_GLOBAL_Z_INDEX">INV_INFO_WINDOW_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Image%20Constants.html">Image Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_LOCATION_ICON_IMAGE">INV_LOCATION_ICON_IMAGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_LOCATION_ICON_IMAGE_TRACKING">INV_LOCATION_ICON_IMAGE_TRACKING</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_LOCATION_ICON_IMAGE_TRACKING_COMPASS">INV_LOCATION_ICON_IMAGE_TRACKING_COMPASS</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_MARKER_IMAGE_BLUE">INV_MARKER_IMAGE_BLUE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_MARKER_IMAGE_GRAY">INV_MARKER_IMAGE_GRAY</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_MARKER_IMAGE_GREEN">INV_MARKER_IMAGE_GREEN</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_MARKER_IMAGE_RED">INV_MARKER_IMAGE_RED</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_MARKER_IMAGE_YELLOW">INV_MARKER_IMAGE_YELLOW</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Color%20Constants.html">Color Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Color%20Constants.html#/c:@INV_LOCATION_ICON_CIRCLE_COLOR">INV_LOCATION_ICON_CIRCLE_COLOR</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>InaviMapView</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">InaviMapView</span> <span class="p">:</span> <span class="nc">UIView</span></code></pre>
+
+                </div>
+              </div>
+            <p>아이나비 지도를 정의하는 뷰 클래스.<br>
+해당 클래스를 서브 뷰로 추가하여 지도를 표출할 수 있습니다.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Creating%20Instances"></a>
+                <a name="//apple_ref/objc/Section/Creating Instances" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a href="#/Creating%20Instances">
+                    <h3 id="Creating%20Instances" class="section-name">Creating Instances<span class="anchor-icon" /></h3>
+                  </a>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)InaviMapView(im)initWithFrame:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithFrame:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(im)initWithFrame:">-initWithFrame:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지정된 프레임 크기로 지도 뷰의 인스턴스를 생성합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithFrame</span><span class="p">:(</span><span class="n">CGRect</span><span class="p">)</span><span class="nv">frame</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>frame</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>사용자 지정 프레임 크기.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>InaviMapView</code> 인스턴스.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)InaviMapView(im)initWithFrame:options:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithFrame:options:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(im)initWithFrame:options:">-initWithFrame:options:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지정된 프레임 크기와 지도의 기본 옵션을 지정하여 지도 뷰의 인스턴스를 생성합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithFrame</span><span class="p">:(</span><span class="n">CGRect</span><span class="p">)</span><span class="nv">frame</span>
+                              <span class="nf">options</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/INVMapOptions.html">INVMapOptions</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">options</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="kt"><a href="../Classes/INVMapOptions.html">INVMapOptions</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>frame</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>사용자 지정 프레임 크기.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>지도의 기본 옵션.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>InaviMapView</code> 인스턴스.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Accessing%20the%20Delegate"></a>
+                <a name="//apple_ref/objc/Section/Accessing the Delegate" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a href="#/Accessing%20the%20Delegate">
+                    <h3 id="Accessing%20the%20Delegate" class="section-name">Accessing the Delegate<span class="anchor-icon" /></h3>
+                  </a>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)InaviMapView(py)delegate"></a>
+                    <a name="//apple_ref/objc/Property/delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(py)delegate">delegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>InaviMapView</code>의 Delegate.</p>
+
+<p>지도 뷰의 Delegate를 이용해 지도의 표출이나, 화면 갱신 여부 등의 메시지를 전달합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/INVMapViewDelegate.html">INVMapViewDelegate</a></span><span class="o">&gt;</span> <span class="n">delegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Configuring%20the%20Map%E2%80%99s%20Appearance"></a>
+                <a name="//apple_ref/objc/Section/Configuring the Map’s Appearance" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a href="#/Configuring%20the%20Map%E2%80%99s%20Appearance">
+                    <h3 id="Configuring%20the%20Map%E2%80%99s%20Appearance" class="section-name">Configuring the Map’s Appearance<span class="anchor-icon" /></h3>
+                  </a>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)InaviMapView(py)minimumZoomLevel"></a>
+                    <a name="//apple_ref/objc/Property/minimumZoomLevel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(py)minimumZoomLevel">minimumZoomLevel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도의 최소 줌 레벨.</p>
+
+<p>기본값은 <code>1</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="kt">double</span> <span class="n">minimumZoomLevel</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">minimumZoomLevel</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)InaviMapView(py)maximumZoomLevel"></a>
+                    <a name="//apple_ref/objc/Property/maximumZoomLevel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(py)maximumZoomLevel">maximumZoomLevel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도의 최대 줌 레벨.</p>
+
+<p>기본값은 <code>20</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="kt">double</span> <span class="n">maximumZoomLevel</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">maximumZoomLevel</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)InaviMapView(py)constraintBounds"></a>
+                    <a name="//apple_ref/objc/Property/constraintBounds" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(py)constraintBounds">constraintBounds</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도 이동을 제한하는 <code><a href="../Classes/INVLatLngBounds.html">INVLatLngBounds</a></code> 영역.</p>
+
+<p><code>nil</code> 설정 시 제한이 해제됩니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span>
+    <span class="n"><a href="../Classes/INVLatLngBounds.html">INVLatLngBounds</a></span> <span class="o">*</span><span class="n">constraintBounds</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">constraintBounds</span><span class="p">:</span> <span class="kt"><a href="../Classes/INVLatLngBounds.html">INVLatLngBounds</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)InaviMapView(py)cameraPosition"></a>
+                    <a name="//apple_ref/objc/Property/cameraPosition" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(py)cameraPosition">cameraPosition</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도 영역 중심에 대한 카메라 위치.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
+    <span class="n"><a href="../Classes/INVCameraPosition.html">INVCameraPosition</a></span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">cameraPosition</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">cameraPosition</span><span class="p">:</span> <span class="kt"><a href="../Classes/INVCameraPosition.html">INVCameraPosition</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)InaviMapView(py)projection"></a>
+                    <a name="//apple_ref/objc/Property/projection" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(py)projection">projection</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>이 지도에 대한 <code><a href="../Classes/INVProjection.html">INVProjection</a></code> 객체.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Classes/INVProjection.html">INVProjection</a></span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">projection</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">projection</span><span class="p">:</span> <span class="kt"><a href="../Classes/INVProjection.html">INVProjection</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)InaviMapView(py)contentInset"></a>
+                    <a name="//apple_ref/objc/Property/contentInset" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(py)contentInset">contentInset</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도의 패딩. 패딩에 해당하는 부분은 지도의 콘텐츠 영역에서 제외됩니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">UIEdgeInsets</span> <span class="n">contentInset</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">contentInset</span><span class="p">:</span> <span class="kt">UIEdgeInsets</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)InaviMapView(py)contentBounds"></a>
+                    <a name="//apple_ref/objc/Property/contentBounds" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(py)contentBounds">contentBounds</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도 영역에 대한 <code><a href="../Classes/INVLatLngBounds.html">INVLatLngBounds</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Classes/INVLatLngBounds.html">INVLatLngBounds</a></span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">contentBounds</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@NSCopying</span> <span class="k">var</span> <span class="nv">contentBounds</span><span class="p">:</span> <span class="kt"><a href="../Classes/INVLatLngBounds.html">INVLatLngBounds</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)InaviMapView(py)showScaleBar"></a>
+                    <a name="//apple_ref/objc/Property/showScaleBar" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(py)showScaleBar">showScaleBar</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>축척 바 표출 여부.</p>
+
+<p>기본값은 <code>YES</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">showScaleBar</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">showScaleBar</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)InaviMapView(py)showCompass"></a>
+                    <a name="//apple_ref/objc/Property/showCompass" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(py)showCompass">showCompass</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>나침반 표출 여부.</p>
+
+<p>기본값은 <code>YES</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">showCompass</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">showCompass</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)InaviMapView(py)showZoomControl"></a>
+                    <a name="//apple_ref/objc/Property/showZoomControl" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(py)showZoomControl">showZoomControl</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>줌 컨트롤 표출 여부.</p>
+
+<p>기본값은 <code>NO</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">showZoomControl</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">showZoomControl</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)InaviMapView(py)showLocationButton"></a>
+                    <a name="//apple_ref/objc/Property/showLocationButton" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(py)showLocationButton">showLocationButton</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>현위치 버튼 표출 여부.</p>
+
+<p>기본값은 <code>NO</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">showLocationButton</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">showLocationButton</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Displaying%20the%20User%E2%80%99s%20Location"></a>
+                <a name="//apple_ref/objc/Section/Displaying the User’s Location" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a href="#/Displaying%20the%20User%E2%80%99s%20Location">
+                    <h3 id="Displaying%20the%20User%E2%80%99s%20Location" class="section-name">Displaying the User’s Location<span class="anchor-icon" /></h3>
+                  </a>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)InaviMapView(py)userTrackingMode"></a>
+                    <a name="//apple_ref/objc/Property/userTrackingMode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(py)userTrackingMode">userTrackingMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>위치 추적 모드.</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    <code><a href="../Enums/INVUserTrackingMode.html">INVUserTrackingMode</a></code>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/INVUserTrackingMode.html">INVUserTrackingMode</a></span> <span class="n">userTrackingMode</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">userTrackingMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/INVUserTrackingMode.html">INVUserTrackingMode</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)InaviMapView(py)locationIcon"></a>
+                    <a name="//apple_ref/objc/Property/locationIcon" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(py)locationIcon">locationIcon</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>현위치 아이콘.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Classes/INVLocationIcon.html">INVLocationIcon</a></span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">locationIcon</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">locationIcon</span><span class="p">:</span> <span class="kt"><a href="../Classes/INVLocationIcon.html">INVLocationIcon</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Configuring%20How%20the%20User%20Interacts%20with%20the%20Map"></a>
+                <a name="//apple_ref/objc/Section/Configuring How the User Interacts with the Map" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a href="#/Configuring%20How%20the%20User%20Interacts%20with%20the%20Map">
+                    <h3 id="Configuring%20How%20the%20User%20Interacts%20with%20the%20Map" class="section-name">Configuring How the User Interacts with the Map<span class="anchor-icon" /></h3>
+                  </a>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)InaviMapView(py)zoomGesturesEnabled"></a>
+                    <a name="//apple_ref/objc/Property/zoomGesturesEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(py)zoomGesturesEnabled">zoomGesturesEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도 줌 제스처 사용 여부를 나타내는 속성.</p>
+
+<p>기본값은 <code>YES</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">getter</span><span class="o">=</span><span class="n">isZoomGesturesEnabled</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
+    <span class="n">BOOL</span> <span class="n">zoomGesturesEnabled</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isZoomGesturesEnabled</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)InaviMapView(py)scrollGesturesEnabled"></a>
+                    <a name="//apple_ref/objc/Property/scrollGesturesEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(py)scrollGesturesEnabled">scrollGesturesEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도 스크롤 제스처 사용 여부를 나타내는 속성.</p>
+
+<p>기본값은 <code>YES</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">getter</span><span class="o">=</span><span class="n">isScrollGesturesEnabled</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
+    <span class="n">BOOL</span> <span class="n">scrollGesturesEnabled</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isScrollGesturesEnabled</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)InaviMapView(py)rotateGesturesEnabled"></a>
+                    <a name="//apple_ref/objc/Property/rotateGesturesEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(py)rotateGesturesEnabled">rotateGesturesEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도 회전 제스처 사용 여부를 나타내는 속성.</p>
+
+<p>기본값은 <code>YES</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">getter</span><span class="o">=</span><span class="n">isRotateGesturesEnabled</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
+    <span class="n">BOOL</span> <span class="n">rotateGesturesEnabled</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isRotateGesturesEnabled</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)InaviMapView(py)tiltGesturesEnabled"></a>
+                    <a name="//apple_ref/objc/Property/tiltGesturesEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(py)tiltGesturesEnabled">tiltGesturesEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도 기울기 제스처 사용 여부를 나타내는 속성.</p>
+
+<p>기본값은 <code>YES</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">getter</span><span class="o">=</span><span class="n">isTiltGesturesEnabled</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
+    <span class="n">BOOL</span> <span class="n">tiltGesturesEnabled</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isTiltGesturesEnabled</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)InaviMapView(py)logoClickEnabled"></a>
+                    <a name="//apple_ref/objc/Property/logoClickEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(py)logoClickEnabled">logoClickEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>로고 클릭 시 SDK 정보 팝업 표출 여부를 나타내는 속성.</p>
+
+<p>비활성화 시 별도의 페이지에 아이나비 지도 SDK의 오픈 소스 라이선스와 법적 공지를 제공해야 합니다.<br>
+기본값은 <code>YES</code>입니다.</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    <code><a href="../Classes/INVMapSdk.html#/c:objc(cs)INVMapSdk(cm)presentLicenseViewController">+[INVMapSdk presentLicenseViewController]</a></code><br><code><a href="../Classes/INVMapSdk.html#/c:objc(cs)INVMapSdk(cm)presentLegalNoticeViewController">+[INVMapSdk presentLegalNoticeViewController]</a></code>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">getter</span><span class="o">=</span><span class="n">isLogoClickEnabled</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
+    <span class="n">BOOL</span> <span class="n">logoClickEnabled</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isLogoClickEnabled</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)InaviMapView(py)decelerationRate"></a>
+                    <a name="//apple_ref/objc/Property/decelerationRate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(py)decelerationRate">decelerationRate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도 애니메이션 마찰 계수 입니다.
+값의 범위는 <code>0~1</code>이며, 계수가 클수록 마찰이 강해집니다.</p>
+
+<p>기본값은 UIScrollViewDecelerationRate의 <code>UIScrollViewDecelerationRateNormal</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">CGFloat</span> <span class="n">decelerationRate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">decelerationRate</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Manipulating%20the%20Viewpoint"></a>
+                <a name="//apple_ref/objc/Section/Manipulating the Viewpoint" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a href="#/Manipulating%20the%20Viewpoint">
+                    <h3 id="Manipulating%20the%20Viewpoint" class="section-name">Manipulating the Viewpoint<span class="anchor-icon" /></h3>
+                  </a>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)InaviMapView(im)moveCamera:"></a>
+                    <a name="//apple_ref/objc/Method/-moveCamera:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(im)moveCamera:">-moveCamera:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>카메라를 이동합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">moveCamera</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/INVCameraUpdate.html">INVCameraUpdate</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">cameraUpdate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">moveCamera</span><span class="p">(</span><span class="n">_</span> <span class="nv">cameraUpdate</span><span class="p">:</span> <span class="kt"><a href="../Classes/INVCameraUpdate.html">INVCameraUpdate</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cameraUpdate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Classes/INVCameraUpdate.html">INVCameraUpdate</a></code> 객체.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)InaviMapView(im)moveCamera:completion:"></a>
+                    <a name="//apple_ref/objc/Method/-moveCamera:completion:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(im)moveCamera:completion:">-moveCamera:completion:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>카메라를 이동합니다.
+카메라 이동이 완료되거나 취소되었을 경우 <code>completion</code> 블록이 호출됩니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">moveCamera</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/INVCameraUpdate.html">INVCameraUpdate</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">cameraUpdate</span>
+        <span class="nf">completion</span><span class="p">:(</span><span class="n">nullable</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">BOOL</span><span class="p">))</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">moveCamera</span><span class="p">(</span><span class="n">_</span> <span class="nv">cameraUpdate</span><span class="p">:</span> <span class="kt"><a href="../Classes/INVCameraUpdate.html">INVCameraUpdate</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cameraUpdate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Classes/INVCameraUpdate.html">INVCameraUpdate</a></code> 객체.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>카메라 이동이 완료되었을 때 호출되는 콜백 블록. (완료 전에 다른 지도 조작으로 취소 여부를 isCancelled로 전달합니다.)</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)InaviMapView(im)cancelTransitions"></a>
+                    <a name="//apple_ref/objc/Method/-cancelTransitions" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(im)cancelTransitions">-cancelTransitions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>현재 진행 중인 지도 이동 애니메이션을 취소합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">cancelTransitions</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">cancelTransitions</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>ⓒ 2019. <a class="link" href="http://www.inavisys.com/" target="_blank" rel="external">iNavi Systems Corp.</a> All rights reserved.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

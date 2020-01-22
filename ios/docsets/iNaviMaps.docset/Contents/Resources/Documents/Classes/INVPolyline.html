@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>INVPolyline Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    <link rel='shortcut icon' href='http://www.inavi.com/Content/css/inavi.ico' type='image/x-icon' />
+  </head>
+  <body>
+
+    <a name="//apple_ref/objc/Class/INVPolyline" class="dashAnchor"></a>
+
+    <a title="INVPolyline Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          <img class="header-icon" src="../img/inavi.png" />
+          <span class='header-tag'>iNaviMaps SDK for iOS 0.3.2</span>
+        </a>
+        
+      </p>
+    
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">iNaviMaps Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      INVPolyline Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Maps.html">Maps</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/InaviMapView.html">InaviMapView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVMapOptions.html">INVMapOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/INVMapViewDelegate.html">INVMapViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/INVUserTrackingMode.html">INVUserTrackingMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVLocationIcon.html">INVLocationIcon</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Camera.html">Camera</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVCameraPosition.html">INVCameraPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVCameraUpdate.html">INVCameraUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVCameraUpdateParams.html">INVCameraUpdateParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/INVCameraUpdateAnimation.html">INVCameraUpdateAnimation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Geometry.html">Geometry</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVLatLng.html">INVLatLng</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVLatLngBounds.html">INVLatLngBounds</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVProjection.html">INVProjection</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Shapes.html">Shapes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVShape.html">INVShape</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVImage.html">INVImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Shapes.html#/c:objc(pl)INVImageDataSource">INVImageDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/INVImageTextDataSource.html">INVImageTextDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/INVImageViewDataSource.html">INVImageViewDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVMarker.html">INVMarker</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVPolygon.html">INVPolygon</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVPolyline.html">INVPolyline</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVRoute.html">INVRoute</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVRouteLink.html">INVRouteLink</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/INVRouteDelegate.html">INVRouteDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVMultiLine.html">INVMultiLine</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVLine.html">INVLine</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/INVLineCap.html">INVLineCap</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/INVLineJoin.html">INVLineJoin</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVCircle.html">INVCircle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVInfoWindow.html">INVInfoWindow</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Authentication.html">Authentication</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVMapSdk.html">INVMapSdk</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/INVMapSdkDelegate.html">INVMapSdkDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Event%20Block.html">Event Block</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Event%20Block.html#/c:INVShape.h@T@INVShapeTouchEvent">INVShapeTouchEvent</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Camera%20Constants.html">Camera Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Camera%20Constants.html#/c:INVCameraUpdate.h@INV_CAMERA_UPDATE_REASON_CONTROL">INV_CAMERA_UPDATE_REASON_CONTROL</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Camera%20Constants.html#/c:INVCameraUpdate.h@INV_CAMERA_UPDATE_REASON_GESTURE">INV_CAMERA_UPDATE_REASON_GESTURE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Camera%20Constants.html#/c:INVCameraUpdate.h@INV_CAMERA_UPDATE_REASON_LOCATION_CHANGED">INV_CAMERA_UPDATE_REASON_LOCATION_CHANGED</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Camera%20Constants.html#/c:INVCameraUpdate.h@INV_CAMERA_UPDATE_REASON_NONE">INV_CAMERA_UPDATE_REASON_NONE</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Global%20Z%20Index%20Constants.html">Global Z Index Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVLocationIcon.h@INV_LOCATION_ICON_DEFAULT_GLOBAL_Z_INDEX">INV_LOCATION_ICON_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVMarker.h@INV_MARKER_DEFAULT_GLOBAL_Z_INDEX">INV_MARKER_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVPolygon.h@INV_POLYGON_DEFAULT_GLOBAL_Z_INDEX">INV_POLYGON_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVPolyline.h@INV_POLYLINE_DEFAULT_GLOBAL_Z_INDEX">INV_POLYLINE_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVRoute.h@INV_ROUTE_DEFAULT_GLOBAL_Z_INDEX">INV_ROUTE_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVMultiLine.h@INV_MULTI_LINE_DEFAULT_GLOBAL_Z_INDEX">INV_MULTI_LINE_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVCircle.h@INV_CIRCLE_DEFAULT_GLOBAL_Z_INDEX">INV_CIRCLE_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVInfoWindow.h@INV_INFO_WINDOW_DEFAULT_GLOBAL_Z_INDEX">INV_INFO_WINDOW_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Image%20Constants.html">Image Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_LOCATION_ICON_IMAGE">INV_LOCATION_ICON_IMAGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_LOCATION_ICON_IMAGE_TRACKING">INV_LOCATION_ICON_IMAGE_TRACKING</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_LOCATION_ICON_IMAGE_TRACKING_COMPASS">INV_LOCATION_ICON_IMAGE_TRACKING_COMPASS</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_MARKER_IMAGE_BLUE">INV_MARKER_IMAGE_BLUE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_MARKER_IMAGE_GRAY">INV_MARKER_IMAGE_GRAY</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_MARKER_IMAGE_GREEN">INV_MARKER_IMAGE_GREEN</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_MARKER_IMAGE_RED">INV_MARKER_IMAGE_RED</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_MARKER_IMAGE_YELLOW">INV_MARKER_IMAGE_YELLOW</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Color%20Constants.html">Color Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Color%20Constants.html#/c:@INV_LOCATION_ICON_CIRCLE_COLOR">INV_LOCATION_ICON_CIRCLE_COLOR</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>INVPolyline</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">INVPolyline</span> <span class="p">:</span> <span class="nc"><a href="../Classes/INVShape.html">INVShape</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>지도 위에 선형을 표출하는 셰이프 클래스.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVPolyline(py)width"></a>
+                    <a name="//apple_ref/objc/Property/width" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVPolyline(py)width">width</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>폴리라인의 두께. (pt 단위)</p>
+
+<p>기본값은 <code>2.5</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">CGFloat</span> <span class="n">width</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">width</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVPolyline(py)color"></a>
+                    <a name="//apple_ref/objc/Property/color" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVPolyline(py)color">color</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>폴리라인의 색상.</p>
+
+<p>기본값은 <code>UIColor.blackColor</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">UIColor</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">color</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@NSCopying</span> <span class="k">var</span> <span class="nv">color</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVPolyline(py)capType"></a>
+                    <a name="//apple_ref/objc/Property/capType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVPolyline(py)capType">capType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>폴리라인의 끝 지점 모양.</p>
+
+<p>기본값은 <code>INVLineCapButt</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/INVLineCap.html">INVLineCap</a></span> <span class="n">capType</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">capType</span><span class="p">:</span> <span class="kt"><a href="../Enums/INVLineCap.html">INVLineCap</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVPolyline(py)joinType"></a>
+                    <a name="//apple_ref/objc/Property/joinType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVPolyline(py)joinType">joinType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>폴리라인의 연결점 모양.</p>
+
+<p>기본값은 <code>INVLineJoinMiter</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/INVLineJoin.html">INVLineJoin</a></span> <span class="n">joinType</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">joinType</span><span class="p">:</span> <span class="kt"><a href="../Enums/INVLineJoin.html">INVLineJoin</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVPolyline(py)pattern"></a>
+                    <a name="//apple_ref/objc/Property/pattern" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVPolyline(py)pattern">pattern</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>폴리라인의 점선 패턴. (pt 단위)</p>
+
+<p>배열 내 홀수 index의 값은 실선의 길이, 짝수 index의 값은 공백의 길이를 의미합니다.<br>
+빈 배열일 경우 실선이 됩니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSNumber</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">pattern</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">pattern</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSNumber</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVPolyline(py)coords"></a>
+                    <a name="//apple_ref/objc/Property/coords" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVPolyline(py)coords">coords</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>폴리라인의 좌표열.</p>
+
+<p><code>coords</code>의 크기는 <code>2</code> 이상이어야 합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">copy</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/INVLatLng.html">INVLatLng</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">coords</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">coords</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/INVLatLng.html">INVLatLng</a></span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVPolyline(cm)polylineWithCoords:"></a>
+                    <a name="//apple_ref/objc/Method/+polylineWithCoords:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVPolyline(cm)polylineWithCoords:">+polylineWithCoords:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>좌표열을 이용하여 폴리라인 객체를 생성합니다.</p>
+
+<p><code><a href="../Classes/INVPolyline.html#/c:objc(cs)INVPolyline(py)coords">coords</a></code>의 크기는 <code>2</code> 이상이어야 합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">polylineWithCoords</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/INVLatLng.html">INVLatLng</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">coords</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">coords</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/INVLatLng.html">INVLatLng</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>coords</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>좌표열.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>INVPolyline</code> 객체.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>ⓒ 2019. <a class="link" href="http://www.inavisys.com/" target="_blank" rel="external">iNavi Systems Corp.</a> All rights reserved.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

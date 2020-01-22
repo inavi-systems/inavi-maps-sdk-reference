@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>INVCameraPosition Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    <link rel='shortcut icon' href='http://www.inavi.com/Content/css/inavi.ico' type='image/x-icon' />
+  </head>
+  <body>
+
+    <a name="//apple_ref/objc/Class/INVCameraPosition" class="dashAnchor"></a>
+
+    <a title="INVCameraPosition Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          <img class="header-icon" src="../img/inavi.png" />
+          <span class='header-tag'>iNaviMaps SDK for iOS 0.3.2</span>
+        </a>
+        
+      </p>
+    
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">iNaviMaps Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      INVCameraPosition Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Maps.html">Maps</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/InaviMapView.html">InaviMapView</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVMapOptions.html">INVMapOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/INVMapViewDelegate.html">INVMapViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/INVUserTrackingMode.html">INVUserTrackingMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVLocationIcon.html">INVLocationIcon</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Camera.html">Camera</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVCameraPosition.html">INVCameraPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVCameraUpdate.html">INVCameraUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVCameraUpdateParams.html">INVCameraUpdateParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/INVCameraUpdateAnimation.html">INVCameraUpdateAnimation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Geometry.html">Geometry</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVLatLng.html">INVLatLng</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVLatLngBounds.html">INVLatLngBounds</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVProjection.html">INVProjection</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Shapes.html">Shapes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVShape.html">INVShape</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVImage.html">INVImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Shapes.html#/c:objc(pl)INVImageDataSource">INVImageDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/INVImageTextDataSource.html">INVImageTextDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/INVImageViewDataSource.html">INVImageViewDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVMarker.html">INVMarker</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVPolygon.html">INVPolygon</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVPolyline.html">INVPolyline</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVRoute.html">INVRoute</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVRouteLink.html">INVRouteLink</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/INVRouteDelegate.html">INVRouteDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVMultiLine.html">INVMultiLine</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVLine.html">INVLine</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/INVLineCap.html">INVLineCap</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/INVLineJoin.html">INVLineJoin</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVCircle.html">INVCircle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVInfoWindow.html">INVInfoWindow</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Authentication.html">Authentication</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVMapSdk.html">INVMapSdk</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/INVMapSdkDelegate.html">INVMapSdkDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Event%20Block.html">Event Block</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Event%20Block.html#/c:INVShape.h@T@INVShapeTouchEvent">INVShapeTouchEvent</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Camera%20Constants.html">Camera Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Camera%20Constants.html#/c:INVCameraUpdate.h@INV_CAMERA_UPDATE_REASON_CONTROL">INV_CAMERA_UPDATE_REASON_CONTROL</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Camera%20Constants.html#/c:INVCameraUpdate.h@INV_CAMERA_UPDATE_REASON_GESTURE">INV_CAMERA_UPDATE_REASON_GESTURE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Camera%20Constants.html#/c:INVCameraUpdate.h@INV_CAMERA_UPDATE_REASON_LOCATION_CHANGED">INV_CAMERA_UPDATE_REASON_LOCATION_CHANGED</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Camera%20Constants.html#/c:INVCameraUpdate.h@INV_CAMERA_UPDATE_REASON_NONE">INV_CAMERA_UPDATE_REASON_NONE</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Global%20Z%20Index%20Constants.html">Global Z Index Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVLocationIcon.h@INV_LOCATION_ICON_DEFAULT_GLOBAL_Z_INDEX">INV_LOCATION_ICON_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVMarker.h@INV_MARKER_DEFAULT_GLOBAL_Z_INDEX">INV_MARKER_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVPolygon.h@INV_POLYGON_DEFAULT_GLOBAL_Z_INDEX">INV_POLYGON_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVPolyline.h@INV_POLYLINE_DEFAULT_GLOBAL_Z_INDEX">INV_POLYLINE_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVRoute.h@INV_ROUTE_DEFAULT_GLOBAL_Z_INDEX">INV_ROUTE_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVMultiLine.h@INV_MULTI_LINE_DEFAULT_GLOBAL_Z_INDEX">INV_MULTI_LINE_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVCircle.h@INV_CIRCLE_DEFAULT_GLOBAL_Z_INDEX">INV_CIRCLE_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global%20Z%20Index%20Constants.html#/c:INVInfoWindow.h@INV_INFO_WINDOW_DEFAULT_GLOBAL_Z_INDEX">INV_INFO_WINDOW_DEFAULT_GLOBAL_Z_INDEX</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Image%20Constants.html">Image Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_LOCATION_ICON_IMAGE">INV_LOCATION_ICON_IMAGE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_LOCATION_ICON_IMAGE_TRACKING">INV_LOCATION_ICON_IMAGE_TRACKING</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_LOCATION_ICON_IMAGE_TRACKING_COMPASS">INV_LOCATION_ICON_IMAGE_TRACKING_COMPASS</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_MARKER_IMAGE_BLUE">INV_MARKER_IMAGE_BLUE</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_MARKER_IMAGE_GRAY">INV_MARKER_IMAGE_GRAY</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_MARKER_IMAGE_GREEN">INV_MARKER_IMAGE_GREEN</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_MARKER_IMAGE_RED">INV_MARKER_IMAGE_RED</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Image%20Constants.html#/c:@INV_MARKER_IMAGE_YELLOW">INV_MARKER_IMAGE_YELLOW</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Color%20Constants.html">Color Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Color%20Constants.html#/c:@INV_LOCATION_ICON_CIRCLE_COLOR">INV_LOCATION_ICON_CIRCLE_COLOR</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content top-matter">
+            <h1>INVCameraPosition</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">INVCameraPosition</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>카메라의 위치 정보 관련 클래스.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVCameraPosition(py)target"></a>
+                    <a name="//apple_ref/objc/Property/target" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVCameraPosition(py)target">target</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>카메라의 위치 좌표.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Classes/INVLatLng.html">INVLatLng</a></span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">target</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">target</span><span class="p">:</span> <span class="kt"><a href="../Classes/INVLatLng.html">INVLatLng</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVCameraPosition(py)zoom"></a>
+                    <a name="//apple_ref/objc/Property/zoom" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVCameraPosition(py)zoom">zoom</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>줌 레벨. 지도에서 보여질 축척을 의미합니다. 값이 증가할수록 지도가 확대되어 보여집니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="kt">double</span> <span class="n">zoom</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">zoom</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVCameraPosition(py)tilt"></a>
+                    <a name="//apple_ref/objc/Property/tilt" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVCameraPosition(py)tilt">tilt</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>기울기 각도. 카메라가 지면을 내려다보는 각도를 의미합니다. (도 단위)
+값이 &lsquo;0&#39;이면 지면을 수직으로 내려다보는 경우를 의미하며, 수평으로 비스듬해질수록 값이 증가합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="kt">double</span> <span class="n">tilt</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">tilt</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVCameraPosition(py)bearing"></a>
+                    <a name="//apple_ref/objc/Property/bearing" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVCameraPosition(py)bearing">bearing</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>베어링 각도. 카메라가 바라보는 방위를 의미합니다. (도 단위)
+값이 &lsquo;0&#39;이면 북쪽을 의미하며, 시계 방향으로 값이 증가합니다. &#39;360&#39;의 배수마다 다시 북쪽이 됩니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="kt">double</span> <span class="n">bearing</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">bearing</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVCameraPosition(cm)cameraPosition:zoom:tilt:bearing:"></a>
+                    <a name="//apple_ref/objc/Method/+cameraPosition:zoom:tilt:bearing:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVCameraPosition(cm)cameraPosition:zoom:tilt:bearing:">+cameraPosition:zoom:tilt:bearing:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>좌표, 줌 레벨, 기울기, 베어링으로 <code>INVCameraPosition</code>객체를 생성합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">cameraPosition</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/INVLatLng.html">INVLatLng</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">target</span>
+                                  <span class="nf">zoom</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">zoom</span>
+                                  <span class="nf">tilt</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">tilt</span>
+                               <span class="nf">bearing</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">bearing</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">target</span><span class="p">:</span> <span class="kt"><a href="../Classes/INVLatLng.html">INVLatLng</a></span><span class="p">,</span> <span class="nv">zoom</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">tilt</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">bearing</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>target</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>카메라의 좌표.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tilt</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>카메라의 기울기 각도.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bearing</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>카메라의 베어링 각도.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>INVCameraPosition</code> 객체.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVCameraPosition(cm)cameraPosition:zoom:"></a>
+                    <a name="//apple_ref/objc/Method/+cameraPosition:zoom:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVCameraPosition(cm)cameraPosition:zoom:">+cameraPosition:zoom:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>좌표와 줌 레벨로 <code>INVCameraPosition</code>객체를 생성합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">cameraPosition</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/INVLatLng.html">INVLatLng</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">target</span>
+                                  <span class="nf">zoom</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">zoom</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">target</span><span class="p">:</span> <span class="kt"><a href="../Classes/INVLatLng.html">INVLatLng</a></span><span class="p">,</span> <span class="nv">zoom</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>target</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>카메라의 좌표.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>zoom</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>카메라의 줌 레벨.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>INVCameraPosition</code> 객체.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>ⓒ 2019. <a class="link" href="http://www.inavisys.com/" target="_blank" rel="external">iNavi Systems Corp.</a> All rights reserved.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
