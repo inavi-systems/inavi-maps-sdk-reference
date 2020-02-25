@@ -1,47 +1,47 @@
 {
   "warnings": [
     {
-      "file": "/Users/bonamanada/Desktop/inavi-maps-sdk/platform/darwin/src/INVMapSdk.h",
+      "file": "/Volumes/SSD/iMaps/iOS/platform/darwin/src/INVMapSdk.h",
       "line": 13,
       "symbol": "INVErrorCode",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bonamanada/Desktop/inavi-maps-sdk/platform/darwin/src/INVMapSdk.h",
+      "file": "/Volumes/SSD/iMaps/iOS/platform/darwin/src/INVMapSdk.h",
       "line": 13,
       "symbol": "INVErrorCode",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bonamanada/Desktop/inavi-maps-sdk/platform/darwin/src/INVProjection.h",
+      "file": "/Volumes/SSD/iMaps/iOS/platform/darwin/src/INVProjection.h",
       "line": 24,
       "symbol": "INVProjection.+projection:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bonamanada/Desktop/inavi-maps-sdk/platform/darwin/src/INVShape.h",
-      "line": 71,
-      "symbol": "INVShape.identifier",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "file": "/Volumes/SSD/iMaps/iOS/platform/ios/src/InaviMapView.h",
+      "line": 250,
+      "symbol": "InaviMapView.-cameraThatFitsCoordinateBounds:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bonamanada/Desktop/inavi-maps-sdk/platform/ios/src/iNaviMaps.h",
+      "file": "/Volumes/SSD/iMaps/iOS/platform/ios/src/iNaviMaps.h",
       "line": 6,
       "symbol": "iNaviMapsVersionNumber",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/bonamanada/Desktop/inavi-maps-sdk/platform/ios/src/iNaviMaps.h",
+      "file": "/Volumes/SSD/iMaps/iOS/platform/ios/src/iNaviMaps.h",
       "line": 9,
       "symbol": "iNaviMapsVersionString",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/bonamanada/Desktop/inavi-maps-sdk"
+  "source_directory": "/Volumes/SSD/iMaps/iOS"
 }

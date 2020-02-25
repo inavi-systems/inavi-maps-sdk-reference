@@ -19,7 +19,7 @@
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
           <img class="header-icon" src="../img/inavi.png" />
-          <span class='header-tag'>iNaviMaps SDK for iOS 0.3.2</span>
+          <span class='header-tag'>iNaviMaps SDK for iOS 0.4.0</span>
         </a>
         
       </p>
@@ -95,6 +95,9 @@
                 <a class="nav-group-task-link" href="../Classes/INVShape.html">INVShape</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/INVShapeOptions.html">INVShapeOptions</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/INVImage.html">INVImage</a>
               </li>
               <li class="nav-group-task">
@@ -108,6 +111,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/INVMarker.html">INVMarker</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/INVMarkerOptions.html">INVMarkerOptions</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/INVPolygon.html">INVPolygon</a>
@@ -141,6 +147,29 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/INVInfoWindow.html">INVInfoWindow</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Clustering.html">Clustering</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/INVCluster.html">INVCluster</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/INVClusterItem.html">INVClusterItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVClusterManager.html">INVClusterManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/INVClusterManagerDelegate.html">INVClusterManagerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/INVClusterIconGenerator.html">INVClusterIconGenerator</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVDefaultClusterIconGenerator.html">INVDefaultClusterIconGenerator</a>
               </li>
             </ul>
           </li>
@@ -287,9 +316,9 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>경로의 색상.</p>
+                        <p>경로의 선 색상.</p>
 
-<p>기본값은 <code>UIColor.blackColor</code>입니다.</p>
+<p>기본값은 <code>UIColor.whiteColor</code>입니다.</p>
 
                       </div>
                       <div class="declaration">
@@ -323,7 +352,7 @@
                       <div class="abstract">
                         <p>경로의 테두리 색상.</p>
 
-<p>기본값은 <code>UIColor.whiteColor</code>입니다.</p>
+<p>기본값은 <code>UIColor.blackColor</code>입니다.</p>
 
                       </div>
                       <div class="declaration">
@@ -436,6 +465,76 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:objc(cs)INVRouteLink(cm)linkWithCoords:lineColor:"></a>
+                    <a name="//apple_ref/objc/Method/+linkWithCoords:lineColor:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVRouteLink(cm)linkWithCoords:lineColor:">+linkWithCoords:lineColor:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>좌표열과 선 색상을 이용하여 링크 객체를 생성합니다.</p>
+
+<p><code><a href="../Classes/INVRouteLink.html#/c:objc(cs)INVRouteLink(py)coords">coords</a></code>의 크기는 <code>2</code> 이상이어야 합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">linkWithCoords</span><span class="p">:(</span><span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/INVLatLng.html">INVLatLng</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">coords</span>
+                             <span class="nf">lineColor</span><span class="p">:(</span><span class="n">UIColor</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">lineColor</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">coords</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/INVLatLng.html">INVLatLng</a></span><span class="p">],</span> <span class="nv">lineColor</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>coords</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>좌표열.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>lineColor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>색상.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>INVRouteLink</code> 객체.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:objc(cs)INVRouteLink(cm)linkWithCoords:lineColor:strokeColor:"></a>
                     <a name="//apple_ref/objc/Method/+linkWithCoords:lineColor:strokeColor:" class="dashAnchor"></a>
                     <a class="token" href="#/c:objc(cs)INVRouteLink(cm)linkWithCoords:lineColor:strokeColor:">+linkWithCoords:lineColor:strokeColor:</a>
@@ -446,7 +545,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>좌표열과 색상을 이용하여 링크 객체를 생성합니다.</p>
+                        <p>좌표열과 선 색상, 테두리 색상을 이용하여 링크 객체를 생성합니다.</p>
 
 <p><code><a href="../Classes/INVRouteLink.html#/c:objc(cs)INVRouteLink(py)coords">coords</a></code>의 크기는 <code>2</code> 이상이어야 합니다.</p>
 
@@ -524,7 +623,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>ⓒ 2019. <a class="link" href="http://www.inavisys.com/" target="_blank" rel="external">iNavi Systems Corp.</a> All rights reserved.</p>
+      <p>ⓒ 2019-2020. <a class="link" href="http://www.inavisys.com/" target="_blank" rel="external">iNavi Systems Corp.</a> All rights reserved.</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
