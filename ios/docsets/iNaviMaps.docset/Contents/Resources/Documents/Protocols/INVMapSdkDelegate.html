@@ -19,7 +19,7 @@
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
           <img class="header-icon" src="../img/inavi.png" />
-          <span class='header-tag'>iNaviMaps SDK for iOS 0.6.1</span>
+          <span class='header-tag'>iNaviMaps SDK for iOS 0.7.0</span>
         </a>
         
       </p>
@@ -54,6 +54,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/INVLocationIcon.html">INVLocationIcon</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVMapStyle.html">INVMapStyle</a>
               </li>
             </ul>
           </li>
@@ -288,7 +291,7 @@
 
                 </div>
               </div>
-            <p>아이나비 지도 인증에 실패 처리 결과를 알려주는 콜백 메서드가 정의된 프로토콜.</p>
+            <p>아이나비 지도 인증 결과를 알려주는 콜백 메서드가 정의된 프로토콜.</p>
 
           </div>
         </section>
@@ -351,6 +354,58 @@
                               <td>
                                 <div>
                                   <p>인증 실패 메시지</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)INVMapSdkDelegate(im)authSuccess:"></a>
+                    <a name="//apple_ref/objc/Method/-authSuccess:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)INVMapSdkDelegate(im)authSuccess:">-authSuccess:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>아이나비 지도 인증에 성공했을 때 커스텀 스타일 배열과 함께 호출되는 콜백.<br>
+커스텀 지도 스타일 배열은 SDK에 저장되며 <code><a href="../Classes/INVMapSdk.html#/c:objc(cs)INVMapSdk(py)savedCustomMapStyles">INVMapSdk.savedCustomMapStyles</a></code>에서 확인할 수 있습니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">authSuccess</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/INVMapStyle.html">INVMapStyle</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">customMapStyles</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">authSuccess</span><span class="p">(</span><span class="n">_</span> <span class="nv">customMapStyles</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/INVMapStyle.html">INVMapStyle</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>customMapStyles</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>커스텀 지도 스타일 배열</p>
                                 </div>
                               </td>
                             </tr>

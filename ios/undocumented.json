@@ -2,14 +2,14 @@
   "warnings": [
     {
       "file": "/Volumes/SSD/iMaps/iOSB/platform/darwin/src/INVMapSdk.h",
-      "line": 13,
+      "line": 14,
       "symbol": "INVErrorCode",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/SSD/iMaps/iOSB/platform/darwin/src/INVMapSdk.h",
-      "line": 13,
+      "line": 14,
       "symbol": "INVErrorCode",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
       "warning": "undocumented"

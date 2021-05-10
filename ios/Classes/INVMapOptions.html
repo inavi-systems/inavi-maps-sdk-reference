@@ -19,7 +19,7 @@
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
           <img class="header-icon" src="../img/inavi.png" />
-          <span class='header-tag'>iNaviMaps SDK for iOS 0.6.1</span>
+          <span class='header-tag'>iNaviMaps SDK for iOS 0.7.0</span>
         </a>
         
       </p>
@@ -54,6 +54,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/INVLocationIcon.html">INVLocationIcon</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVMapStyle.html">INVMapStyle</a>
               </li>
             </ul>
           </li>
@@ -848,6 +851,42 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isLogoClickEnabled</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)INVMapOptions(py)customMapStyle"></a>
+                    <a name="//apple_ref/objc/Property/customMapStyle" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)INVMapOptions(py)customMapStyle">customMapStyle</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도에 적용할 커스텀 지도 스타일.</p>
+
+<p>적용하려는 지도 스타일이 <code><a href="../Classes/INVMapSdk.html#/c:objc(cs)INVMapSdk(py)savedCustomMapStyles">INVMapSdk.savedCustomMapStyles</a></code>에 존재하지 않거나 <code>nil</code>로 설정할 경우 기본 지도 스타일이 적용됩니다.</p>
+
+<p>기본값은 <code>nil</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n"><a href="../Classes/INVMapStyle.html">INVMapStyle</a></span> <span class="o">*</span><span class="n">customMapStyle</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">customMapStyle</span><span class="p">:</span> <span class="kt">UnsafeMutablePointer</span><span class="o">&lt;</span><span class="kt">Int32</span><span class="o">&gt;</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
