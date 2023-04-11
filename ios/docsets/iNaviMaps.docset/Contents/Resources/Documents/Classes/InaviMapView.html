@@ -19,7 +19,7 @@
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
           <img class="header-icon" src="../img/inavi.png" />
-          <span class='header-tag'>iNaviMaps SDK for iOS 0.8.0</span>
+          <span class='header-tag'>iNaviMaps SDK for iOS 0.8.1</span>
         </a>
         
       </p>
@@ -30,7 +30,7 @@
 
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html">iNaviMaps Reference</a>
-      <img class="carat" src="../img/carat.png" />
+      <img class="carat" src="../img/carat.png" alt=""/>
       InaviMapView Class Reference
     </p>
 
@@ -63,6 +63,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/INVMapType.html">INVMapType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVPoi.html">INVPoi</a>
               </li>
             </ul>
           </li>
@@ -305,8 +308,14 @@
             <h1>InaviMapView</h1>
               <div class="declaration">
                 <div class="language">
+                  <p class="aside-title">Objective-C</p>
                   <pre class="highlight objective_c"><code>
 <span class="k">@interface</span> <span class="nc">InaviMapView</span> <span class="p">:</span> <span class="nc">UIView</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">InaviMapView</span> <span class="p">:</span> <span class="kt">UIView</span></code></pre>
 
                 </div>
               </div>
@@ -323,9 +332,9 @@
                 <a name="/Creating%20Instances"></a>
                 <a name="//apple_ref/objc/Section/Creating Instances" class="dashAnchor"></a>
                 <div class="section-name-container">
-                  <a href="#/Creating%20Instances">
-                    <h3 id="Creating%20Instances" class="section-name">Creating Instances<span class="anchor-icon" /></h3>
-                  </a>
+                  <a class="section-name-link" href="#/Creating%20Instances"></a>
+                  <h3 class="section-name"><span>Creating Instances</span>
+</h3>
                 </div>
               </div>
               <ul class="item-container">
@@ -334,7 +343,7 @@
                     <code>
                     <a name="/c:objc(cs)InaviMapView(im)initWithFrame:"></a>
                     <a name="//apple_ref/objc/Method/-initWithFrame:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)InaviMapView(im)initWithFrame:">-initWithFrame:</a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(im)initWithFrame:">-initWithFrame:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -389,7 +398,7 @@
                     <code>
                     <a name="/c:objc(cs)InaviMapView(im)initWithFrame:options:"></a>
                     <a name="//apple_ref/objc/Method/-initWithFrame:options:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)InaviMapView(im)initWithFrame:options:">-initWithFrame:options:</a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(im)initWithFrame:options:">-initWithFrame:<wbr>options:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -452,6 +461,82 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)InaviMapView(im)initWithFrame:options:delegate:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithFrame:options:delegate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(im)initWithFrame:options:delegate:">-initWithFrame:<wbr>options:<wbr>delegate:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지정된 프레임 크기, 기본 옵션과 Delegate를 지정하여 지도 뷰의 인스턴스를 생성합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithFrame</span><span class="p">:(</span><span class="n">CGRect</span><span class="p">)</span><span class="nv">frame</span>
+                              <span class="nf">options</span><span class="p">:(</span><span class="n">nullable</span> <span class="n"><a href="../Classes/INVMapOptions.html">INVMapOptions</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">options</span>
+                             <span class="nf">delegate</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/INVMapViewDelegate.html">INVMapViewDelegate</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nv">delegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>frame</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>사용자 지정 프레임 크기.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>지도의 기본 옵션.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>InaviMapView</code>의 Delegate.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>InaviMapView</code> 인스턴스.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
             <div class="task-group">
@@ -459,9 +544,9 @@
                 <a name="/Accessing%20the%20Delegate"></a>
                 <a name="//apple_ref/objc/Section/Accessing the Delegate" class="dashAnchor"></a>
                 <div class="section-name-container">
-                  <a href="#/Accessing%20the%20Delegate">
-                    <h3 id="Accessing%20the%20Delegate" class="section-name">Accessing the Delegate<span class="anchor-icon" /></h3>
-                  </a>
+                  <a class="section-name-link" href="#/Accessing%20the%20Delegate"></a>
+                  <h3 class="section-name"><span>Accessing the Delegate</span>
+</h3>
                 </div>
               </div>
               <ul class="item-container">
@@ -501,9 +586,9 @@
                 <a name="/Configuring%20the%20Map%E2%80%99s%20Appearance"></a>
                 <a name="//apple_ref/objc/Section/Configuring the Map’s Appearance" class="dashAnchor"></a>
                 <div class="section-name-container">
-                  <a href="#/Configuring%20the%20Map%E2%80%99s%20Appearance">
-                    <h3 id="Configuring%20the%20Map%E2%80%99s%20Appearance" class="section-name">Configuring the Map’s Appearance<span class="anchor-icon" /></h3>
-                  </a>
+                  <a class="section-name-link" href="#/Configuring%20the%20Map%E2%80%99s%20Appearance"></a>
+                  <h3 class="section-name"><span>Configuring the Map’s Appearance</span>
+</h3>
                 </div>
               </div>
               <ul class="item-container">
@@ -1123,9 +1208,9 @@
                 <a name="/Displaying%20the%20User%E2%80%99s%20Location"></a>
                 <a name="//apple_ref/objc/Section/Displaying the User’s Location" class="dashAnchor"></a>
                 <div class="section-name-container">
-                  <a href="#/Displaying%20the%20User%E2%80%99s%20Location">
-                    <h3 id="Displaying%20the%20User%E2%80%99s%20Location" class="section-name">Displaying the User’s Location<span class="anchor-icon" /></h3>
-                  </a>
+                  <a class="section-name-link" href="#/Displaying%20the%20User%E2%80%99s%20Location"></a>
+                  <h3 class="section-name"><span>Displaying the User’s Location</span>
+</h3>
                 </div>
               </div>
               <ul class="item-container">
@@ -1205,9 +1290,9 @@
                 <a name="/Configuring%20How%20the%20User%20Interacts%20with%20the%20Map"></a>
                 <a name="//apple_ref/objc/Section/Configuring How the User Interacts with the Map" class="dashAnchor"></a>
                 <div class="section-name-container">
-                  <a href="#/Configuring%20How%20the%20User%20Interacts%20with%20the%20Map">
-                    <h3 id="Configuring%20How%20the%20User%20Interacts%20with%20the%20Map" class="section-name">Configuring How the User Interacts with the Map<span class="anchor-icon" /></h3>
-                  </a>
+                  <a class="section-name-link" href="#/Configuring%20How%20the%20User%20Interacts%20with%20the%20Map"></a>
+                  <h3 class="section-name"><span>Configuring How the User Interacts with the Map</span>
+</h3>
                 </div>
               </div>
               <ul class="item-container">
@@ -1470,9 +1555,9 @@
                 <a name="/Manipulating%20the%20Viewpoint"></a>
                 <a name="//apple_ref/objc/Section/Manipulating the Viewpoint" class="dashAnchor"></a>
                 <div class="section-name-container">
-                  <a href="#/Manipulating%20the%20Viewpoint">
-                    <h3 id="Manipulating%20the%20Viewpoint" class="section-name">Manipulating the Viewpoint<span class="anchor-icon" /></h3>
-                  </a>
+                  <a class="section-name-link" href="#/Manipulating%20the%20Viewpoint"></a>
+                  <h3 class="section-name"><span>Manipulating the Viewpoint</span>
+</h3>
                 </div>
               </div>
               <ul class="item-container">
@@ -1481,7 +1566,7 @@
                     <code>
                     <a name="/c:objc(cs)InaviMapView(im)moveCamera:"></a>
                     <a name="//apple_ref/objc/Method/-moveCamera:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)InaviMapView(im)moveCamera:">-moveCamera:</a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(im)moveCamera:">-moveCamera:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1532,7 +1617,7 @@
                     <code>
                     <a name="/c:objc(cs)InaviMapView(im)moveCamera:completion:"></a>
                     <a name="//apple_ref/objc/Method/-moveCamera:completion:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)InaviMapView(im)moveCamera:completion:">-moveCamera:completion:</a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(im)moveCamera:completion:">-moveCamera:<wbr>completion:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1554,7 +1639,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">moveCamera</span><span class="p">(</span><span class="n">_</span> <span class="nv">cameraUpdate</span><span class="p">:</span> <span class="kt"><a href="../Classes/INVCameraUpdate.html">INVCameraUpdate</a></span><span class="p">)</span> <span class="k">async</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">moveCamera</span><span class="p">(</span><span class="n">_</span> <span class="nv">cameraUpdate</span><span class="p">:</span> <span class="kt"><a href="../Classes/INVCameraUpdate.html">INVCameraUpdate</a></span><span class="p">)</span> <span class="n">async</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -1629,7 +1714,7 @@
                     <code>
                     <a name="/c:objc(cs)InaviMapView(im)cameraFitBounds:"></a>
                     <a name="//apple_ref/objc/Method/-cameraFitBounds:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)InaviMapView(im)cameraFitBounds:">-cameraFitBounds:</a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(im)cameraFitBounds:">-cameraFitBounds:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1685,7 +1770,7 @@
                     <code>
                     <a name="/c:objc(cs)InaviMapView(im)cameraFitBounds:insets:"></a>
                     <a name="//apple_ref/objc/Method/-cameraFitBounds:insets:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)InaviMapView(im)cameraFitBounds:insets:">-cameraFitBounds:insets:</a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(im)cameraFitBounds:insets:">-cameraFitBounds:<wbr>insets:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1785,6 +1870,61 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)InaviMapView(im)pickPois:"></a>
+                    <a name="//apple_ref/objc/Method/-pickPois:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(im)pickPois:">-pickPois:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>특정 화면 영역에 표출되는 POI의 정보를 <code><a href="../Classes/INVPoi.html">INVPoi</a></code> 객체 Array로 반환합니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/INVPoi.html">INVPoi</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nf">pickPois</span><span class="p">:(</span><span class="n">CGRect</span><span class="p">)</span><span class="nv">rect</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">pickPois</span><span class="p">(</span><span class="n">_</span> <span class="nv">rect</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Classes/INVPoi.html">INVPoi</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>rect</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>화면 영역.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code><a href="../Classes/INVPoi.html">INVPoi</a></code> 객체 Array.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
@@ -1793,9 +1933,8 @@
       </article>
     </div>
     <section class="footer">
-      <p>ⓒ 2019-2022. <a class="link" href="http://www.inavisys.com/" target="_blank" rel="external noopener">iNavi Systems Corp.</a> All rights reserved.</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>ⓒ 2019-2023. <a class="link" href="http://www.inavisys.com/" target="_blank" rel="external noopener">iNavi Systems Corp.</a> All rights reserved.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
     </section>
   </body>
-</div>
 </html>

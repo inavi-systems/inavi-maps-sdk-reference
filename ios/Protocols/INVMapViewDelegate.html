@@ -19,7 +19,7 @@
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
           <img class="header-icon" src="../img/inavi.png" />
-          <span class='header-tag'>iNaviMaps SDK for iOS 0.8.0</span>
+          <span class='header-tag'>iNaviMaps SDK for iOS 0.8.1</span>
         </a>
         
       </p>
@@ -30,7 +30,7 @@
 
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html">iNaviMaps Reference</a>
-      <img class="carat" src="../img/carat.png" />
+      <img class="carat" src="../img/carat.png" alt=""/>
       INVMapViewDelegate Protocol Reference
     </p>
 
@@ -63,6 +63,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/INVMapType.html">INVMapType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVPoi.html">INVPoi</a>
               </li>
             </ul>
           </li>
@@ -305,7 +308,13 @@
             <h1>INVMapViewDelegate</h1>
               <div class="declaration">
                 <div class="language">
+                  <p class="aside-title">Objective-C</p>
                   <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">INVMapViewDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">INVMapViewDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
 
                 </div>
               </div>
@@ -318,12 +327,95 @@
           <div class="section-content">
             <div class="task-group">
               <div class="task-name-container">
+                <a name="/Responding%20to%20Map%20Initialization"></a>
+                <a name="//apple_ref/objc/Section/Responding to Map Initialization" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Responding%20to%20Map%20Initialization"></a>
+                  <h3 class="section-name"><span>Responding to Map Initialization</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)INVMapViewDelegate(im)mapView:willLoadInitialCustomMapStyleInCustomMapStyles:"></a>
+                    <a name="//apple_ref/objc/Method/-mapView:willLoadInitialCustomMapStyleInCustomMapStyles:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)INVMapViewDelegate(im)mapView:willLoadInitialCustomMapStyleInCustomMapStyles:">-mapView:<wbr>willLoadInitialCustomMapStyleInCustomMapStyles:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>지도 인증 과정에서 커스텀 지도 스타일을 로드할 때 호출되는 콜백 메서드.<br>
+콜백 메서드로 전달되는 커스텀 지도 스타일 리스트 중에서 지도에 설정할 커스텀 지도 스타일을 반환하면 됩니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n"><a href="../Classes/INVMapStyle.html">INVMapStyle</a></span> <span class="o">*</span><span class="p">)</span><span class="nf">mapView</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/InaviMapView.html">InaviMapView</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">mapView</span>
+    <span class="nf">willLoadInitialCustomMapStyleInCustomMapStyles</span><span class="p">:</span>
+        <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/INVMapStyle.html">INVMapStyle</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">customMapStyles</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">mapView</span><span class="p">(</span><span class="n">_</span> <span class="nv">mapView</span><span class="p">:</span> <span class="kt"><a href="../Classes/InaviMapView.html">InaviMapView</a></span><span class="p">,</span> <span class="n">willLoadInitialCustomMapStyleInCustomMapStyles</span> <span class="nv">customMapStyles</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/INVMapStyle.html">INVMapStyle</a></span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/INVMapStyle.html">INVMapStyle</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>mapView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>지도 인증 과정에서 커스텀 지도 스타일을 로드할 <code><a href="../Classes/InaviMapView.html">InaviMapView</a></code> 객체.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>customMapStyles</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>커스텀 지도 스타일 리스트.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>설정할 커스텀 지도 스타일. <code>null</code>을 반환하면 기본 지도 스타일이 적용됩니다.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
                 <a name="/Responding%20to%20Map%20Position%20Changes"></a>
                 <a name="//apple_ref/objc/Section/Responding to Map Position Changes" class="dashAnchor"></a>
                 <div class="section-name-container">
-                  <a href="#/Responding%20to%20Map%20Position%20Changes">
-                    <h3 id="Responding%20to%20Map%20Position%20Changes" class="section-name">Responding to Map Position Changes<span class="anchor-icon" /></h3>
-                  </a>
+                  <a class="section-name-link" href="#/Responding%20to%20Map%20Position%20Changes"></a>
+                  <h3 class="section-name"><span>Responding to Map Position Changes</span>
+</h3>
                 </div>
               </div>
               <ul class="item-container">
@@ -332,7 +424,7 @@
                     <code>
                     <a name="/c:objc(pl)INVMapViewDelegate(im)mapView:regionWillChangeAnimated:reason:"></a>
                     <a name="//apple_ref/objc/Method/-mapView:regionWillChangeAnimated:reason:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)INVMapViewDelegate(im)mapView:regionWillChangeAnimated:reason:">-mapView:regionWillChangeAnimated:reason:</a>
+                    <a class="token" href="#/c:objc(pl)INVMapViewDelegate(im)mapView:regionWillChangeAnimated:reason:">-mapView:<wbr>regionWillChangeAnimated:<wbr>reason:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -409,7 +501,7 @@
                     <code>
                     <a name="/c:objc(pl)INVMapViewDelegate(im)mapView:regionIsChangingWithReason:"></a>
                     <a name="//apple_ref/objc/Method/-mapView:regionIsChangingWithReason:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)INVMapViewDelegate(im)mapView:regionIsChangingWithReason:">-mapView:regionIsChangingWithReason:</a>
+                    <a class="token" href="#/c:objc(pl)INVMapViewDelegate(im)mapView:regionIsChangingWithReason:">-mapView:<wbr>regionIsChangingWithReason:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -473,7 +565,7 @@
                     <code>
                     <a name="/c:objc(pl)INVMapViewDelegate(im)mapView:regionDidChangeAnimated:reason:"></a>
                     <a name="//apple_ref/objc/Method/-mapView:regionDidChangeAnimated:reason:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)INVMapViewDelegate(im)mapView:regionDidChangeAnimated:reason:">-mapView:regionDidChangeAnimated:reason:</a>
+                    <a class="token" href="#/c:objc(pl)INVMapViewDelegate(im)mapView:regionDidChangeAnimated:reason:">-mapView:<wbr>regionDidChangeAnimated:<wbr>reason:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -550,7 +642,7 @@
                     <code>
                     <a name="/c:objc(pl)INVMapViewDelegate(im)mapViewDidBecomeIdle:"></a>
                     <a name="//apple_ref/objc/Method/-mapViewDidBecomeIdle:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)INVMapViewDelegate(im)mapViewDidBecomeIdle:">-mapViewDidBecomeIdle:</a>
+                    <a class="token" href="#/c:objc(pl)INVMapViewDelegate(im)mapViewDidBecomeIdle:">-mapViewDidBecomeIdle:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -603,9 +695,9 @@
                 <a name="/Responding%20to%20Map%20Event"></a>
                 <a name="//apple_ref/objc/Section/Responding to Map Event" class="dashAnchor"></a>
                 <div class="section-name-container">
-                  <a href="#/Responding%20to%20Map%20Event">
-                    <h3 id="Responding%20to%20Map%20Event" class="section-name">Responding to Map Event<span class="anchor-icon" /></h3>
-                  </a>
+                  <a class="section-name-link" href="#/Responding%20to%20Map%20Event"></a>
+                  <h3 class="section-name"><span>Responding to Map Event</span>
+</h3>
                 </div>
               </div>
               <ul class="item-container">
@@ -614,7 +706,7 @@
                     <code>
                     <a name="/c:objc(pl)INVMapViewDelegate(im)didTapMapView:LatLng:"></a>
                     <a name="//apple_ref/objc/Method/-didTapMapView:LatLng:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)INVMapViewDelegate(im)didTapMapView:LatLng:">-didTapMapView:LatLng:</a>
+                    <a class="token" href="#/c:objc(pl)INVMapViewDelegate(im)didTapMapView:LatLng:">-didTapMapView:<wbr>LatLng:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -677,7 +769,7 @@
                     <code>
                     <a name="/c:objc(pl)INVMapViewDelegate(im)didDoubleTapMapView:LatLng:"></a>
                     <a name="//apple_ref/objc/Method/-didDoubleTapMapView:LatLng:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)INVMapViewDelegate(im)didDoubleTapMapView:LatLng:">-didDoubleTapMapView:LatLng:</a>
+                    <a class="token" href="#/c:objc(pl)INVMapViewDelegate(im)didDoubleTapMapView:LatLng:">-didDoubleTapMapView:<wbr>LatLng:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -744,7 +836,7 @@
                     <code>
                     <a name="/c:objc(pl)INVMapViewDelegate(im)didLongTapMapView:LatLng:"></a>
                     <a name="//apple_ref/objc/Method/-didLongTapMapView:LatLng:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)INVMapViewDelegate(im)didLongTapMapView:LatLng:">-didLongTapMapView:LatLng:</a>
+                    <a class="token" href="#/c:objc(pl)INVMapViewDelegate(im)didLongTapMapView:LatLng:">-didLongTapMapView:<wbr>LatLng:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -809,9 +901,9 @@
                 <a name="/Responding%20to%20User%20Location"></a>
                 <a name="//apple_ref/objc/Section/Responding to User Location" class="dashAnchor"></a>
                 <div class="section-name-container">
-                  <a href="#/Responding%20to%20User%20Location">
-                    <h3 id="Responding%20to%20User%20Location" class="section-name">Responding to User Location<span class="anchor-icon" /></h3>
-                  </a>
+                  <a class="section-name-link" href="#/Responding%20to%20User%20Location"></a>
+                  <h3 class="section-name"><span>Responding to User Location</span>
+</h3>
                 </div>
               </div>
               <ul class="item-container">
@@ -820,7 +912,7 @@
                     <code>
                     <a name="/c:objc(pl)INVMapViewDelegate(im)mapView:didChangeUserTrackingMode:animated:"></a>
                     <a name="//apple_ref/objc/Method/-mapView:didChangeUserTrackingMode:animated:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)INVMapViewDelegate(im)mapView:didChangeUserTrackingMode:animated:">-mapView:didChangeUserTrackingMode:animated:</a>
+                    <a class="token" href="#/c:objc(pl)INVMapViewDelegate(im)mapView:didChangeUserTrackingMode:animated:">-mapView:<wbr>didChangeUserTrackingMode:<wbr>animated:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -897,7 +989,7 @@
                     <code>
                     <a name="/c:objc(pl)INVMapViewDelegate(im)mapView:didUpdateUserLocation:"></a>
                     <a name="//apple_ref/objc/Method/-mapView:didUpdateUserLocation:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)INVMapViewDelegate(im)mapView:didUpdateUserLocation:">-mapView:didUpdateUserLocation:</a>
+                    <a class="token" href="#/c:objc(pl)INVMapViewDelegate(im)mapView:didUpdateUserLocation:">-mapView:<wbr>didUpdateUserLocation:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -964,9 +1056,8 @@
       </article>
     </div>
     <section class="footer">
-      <p>ⓒ 2019-2022. <a class="link" href="http://www.inavisys.com/" target="_blank" rel="external noopener">iNavi Systems Corp.</a> All rights reserved.</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>ⓒ 2019-2023. <a class="link" href="http://www.inavisys.com/" target="_blank" rel="external noopener">iNavi Systems Corp.</a> All rights reserved.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
     </section>
   </body>
-</div>
 </html>
