@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.inavi.mapsdk.constants"},{"l":"com.inavi.mapsdk.exceptions"},{"l":"com.inavi.mapsdk.geometry"},{"l":"com.inavi.mapsdk.maps"},{"l":"com.inavi.mapsdk.style.clustering"},{"l":"com.inavi.mapsdk.style.poi"},{"l":"com.inavi.mapsdk.style.shapes"}]
