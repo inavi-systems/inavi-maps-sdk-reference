@@ -19,7 +19,7 @@
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
           <img class="header-icon" src="../img/inavi.png" />
-          <span class='header-tag'>iNaviMaps SDK for iOS 0.20.1</span>
+          <span class='header-tag'>iNaviMaps SDK for iOS 0.21.0</span>
         </a>
         
       </p>
@@ -66,6 +66,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/INVPoi.html">INVPoi</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVFloor.html">INVFloor</a>
               </li>
             </ul>
           </li>
@@ -315,7 +318,7 @@
                 </div>
                 <div class="language">
                   <p class="aside-title">Swift</p>
-                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">InaviMapView</span> <span class="p">:</span> <span class="kt">UIView</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">@MainActor</span> <span class="kd">class</span> <span class="kt">InaviMapView</span> <span class="p">:</span> <span class="kt">UIView</span></code></pre>
 
                 </div>
               </div>
@@ -1649,7 +1652,7 @@
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">moveCamera</span><span class="p">(</span><span class="n">_</span> <span class="nv">cameraUpdate</span><span class="p">:</span> <span class="kt"><a href="../Classes/INVCameraUpdate.html">INVCameraUpdate</a></span><span class="p">)</span> <span class="k">async</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">moveCamera</span><span class="p">(</span><span class="n">_</span> <span class="nv">cameraUpdate</span><span class="p">:</span> <span class="kt"><a href="../Classes/INVCameraUpdate.html">INVCameraUpdate</a></span><span class="p">)</span> <span class="n">async</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -1937,6 +1940,111 @@
                 </li>
               </ul>
             </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Indoor%20Map"></a>
+                <a name="//apple_ref/objc/Section/Indoor Map" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Indoor%20Map"></a>
+                  <h3 class="section-name"><span>Indoor Map</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)InaviMapView(py)indoorMapEnabled"></a>
+                    <a name="//apple_ref/objc/Property/indoorMapEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(py)indoorMapEnabled">indoorMapEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>실내지도 활성화 여부를 나타내는 속성.</p>
+
+<p>기본값은 <code>YES</code>입니다.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">unsafe_unretained</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span>
+          <span class="n">getter</span><span class="o">=</span><span class="n">isIndoorMapEnabled</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">indoorMapEnabled</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isIndoorMapEnabled</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)InaviMapView(im)setIndoorFloor:"></a>
+                    <a name="//apple_ref/objc/Method/-setIndoorFloor:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)InaviMapView(im)setIndoorFloor:">-setIndoorFloor:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>현재 표출중인 실내지도에서 전달된 층으로 변경합니다.
+아래와 같은 조건에서는 층이 변경되지 않습니다:</p>
+
+<ul>
+<li>현재 표출중인 실내지도가 없는 경우</li>
+<li><p>층을 찾을 수 없는 경우</p></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setIndoorFloor</span><span class="p">:(</span><span class="n"><a href="../Classes/INVFloor.html">INVFloor</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">floor</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setIndoorFloor</span><span class="p">(</span><span class="n">_</span> <span class="nv">floor</span><span class="p">:</span> <span class="kt"><a href="../Classes/INVFloor.html">INVFloor</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>floor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>설정할 층 정보.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
 
@@ -1944,7 +2052,7 @@
     </div>
     <section class="footer">
       <p>ⓒ 2019-2025. <a class="link" href="http://www.inavisys.com/" target="_blank" rel="external noopener">iNavi Systems Corp.</a> All rights reserved.</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
     </section>
   </body>
 </html>

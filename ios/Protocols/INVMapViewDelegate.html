@@ -19,7 +19,7 @@
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
           <img class="header-icon" src="../img/inavi.png" />
-          <span class='header-tag'>iNaviMaps SDK for iOS 0.20.1</span>
+          <span class='header-tag'>iNaviMaps SDK for iOS 0.21.0</span>
         </a>
         
       </p>
@@ -66,6 +66,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/INVPoi.html">INVPoi</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/INVFloor.html">INVFloor</a>
               </li>
             </ul>
           </li>
@@ -1050,6 +1053,109 @@
                 </li>
               </ul>
             </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Responding%20to%20Indoor%20Map%20Changes"></a>
+                <a name="//apple_ref/objc/Section/Responding to Indoor Map Changes" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Responding%20to%20Indoor%20Map%20Changes"></a>
+                  <h3 class="section-name"><span>Responding to Indoor Map Changes</span>
+</h3>
+                </div>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)INVMapViewDelegate(im)mapView:didChangeIndoor:floors:floor:"></a>
+                    <a name="//apple_ref/objc/Method/-mapView:didChangeIndoor:floors:floor:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)INVMapViewDelegate(im)mapView:didChangeIndoor:floors:floor:">-mapView:<wbr>didChangeIndoor:<wbr>floors:<wbr>floor:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>실내지도 정보가 변경되었을 때 호출되는 콜백 메서드.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">mapView</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/InaviMapView.html">InaviMapView</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">mapView</span>
+    <span class="nf">didChangeIndoor</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSNumber</span> <span class="o">*</span><span class="p">)</span><span class="nv">placeId</span>
+             <span class="nf">floors</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n"><a href="../Classes/INVFloor.html">INVFloor</a></span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">floors</span>
+              <span class="nf">floor</span><span class="p">:(</span><span class="n">nullable</span> <span class="n"><a href="../Classes/INVFloor.html">INVFloor</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">floor</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">mapView</span><span class="p">(</span><span class="n">_</span> <span class="nv">mapView</span><span class="p">:</span> <span class="kt"><a href="../Classes/InaviMapView.html">InaviMapView</a></span><span class="p">,</span> <span class="n">didChangeIndoor</span> <span class="nv">placeId</span><span class="p">:</span> <span class="kt">NSNumber</span><span class="p">?,</span> <span class="nv">floors</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Classes/INVFloor.html">INVFloor</a></span><span class="p">]?,</span> <span class="nv">floor</span><span class="p">:</span> <span class="kt"><a href="../Classes/INVFloor.html">INVFloor</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>mapView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>실내지도 정보가 변경된 <code><a href="../Classes/InaviMapView.html">InaviMapView</a></code> 객체.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>placeId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>현재 실내지도 장소 ID. <code>nil</code>일 경우 실내지도가 표시되지 않음.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>floors</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>현재 장소의 층 목록. <code>nil</code>일 경우 층 정보가 없음.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>floor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>현재 선택된 층. <code>nil</code>일 경우 선택된 층이 없음.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
 
@@ -1057,7 +1163,7 @@
     </div>
     <section class="footer">
       <p>ⓒ 2019-2025. <a class="link" href="http://www.inavisys.com/" target="_blank" rel="external noopener">iNavi Systems Corp.</a> All rights reserved.</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
     </section>
   </body>
 </html>
